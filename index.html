@@ -1,80 +1,124 @@
 <!-- ! tab creates a new boiler plate -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-  <!-- Tab icon image link -->
-  <link rel="shortcut icon" type="image/png" href="img/Logo/logo.png">
+    <!-- Tab icon image link -->
+    <link rel="shortcut icon" type="image/png" href="DBJW_logo.png" />
 
-  <!-- FontAwesome style links https://fontawesome.com/how-to-use/on-the-web/setup/hosting-font-awesome-yourself -->
-  <link href="assets/fontawesome-free-5.12.0-web/css/all.css" rel="stylesheet">
+    <!-- FontAwesome style links https://fontawesome.com/how-to-use/on-the-web/setup/hosting-font-awesome-yourself -->
+    <link
+      href="assets/fontawesome-free-5.12.0-web/css/all.css"
+      rel="stylesheet"
+    />
 
-  <!-- Slick Slider styles file -->
-  <link rel="stylesheet" type="text/css" href="assets/slick-1.8.1/slick/slick.css"/>
-  <!-- Add the new slick-theme.css if you want the default styling -->
-  <link rel="stylesheet" type="text/css" href="assets/slick-1.8.1/slick/slick-theme.css"/>
+    <!-- Slick Slider styles file -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/slick-1.8.1/slick/slick.css"
+    />
+    <!-- Add the new slick-theme.css if you want the default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/slick-1.8.1/slick/slick-theme.css"
+    />
 
-  <!-- Ekko Lightbox style links https://cdnjs.com/libraries/ekko-lightbox -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" integrity="sha256-HAaDW5o2+LelybUhfuk0Zh2Vdk8Y2W2UeKmbaXhalfA=" crossorigin="anonymous" />
+    <!-- Ekko Lightbox style links https://cdnjs.com/libraries/ekko-lightbox -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
+      integrity="sha256-HAaDW5o2+LelybUhfuk0Zh2Vdk8Y2W2UeKmbaXhalfA="
+      crossorigin="anonymous"
+    />
 
-  <!-- Bootstrap SASS compiled CSS styles file -->
-  <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Bootstrap SASS compiled CSS styles file -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
 
-  <!-- Custom styles SASS compiled CSS styles file -->
-  <link rel="stylesheet" href="css/style.css">
+    <!-- Custom styles SASS compiled CSS styles file -->
+    <link rel="stylesheet" href="css/style.css" />
 
-  <!-- Add Bootstrap links https://getbootstrap.com/docs/4.4/getting-started/introduction/ -->
-  <title>Bootstrap Theme</title>
-</head>
-<body>
-  <!-- START HERE -->
+    <!-- Add Bootstrap links https://getbootstrap.com/docs/4.4/getting-started/introduction/ -->
+    <title>Bootstrap Theme</title>
+  </head>
+  <body>
+    <!-- START HERE -->
 
+    <button class="btn btn-warning"></button>
+    <!--FontAwesome icons-->
+    <i class="fas fa-user"></i>
+    <!-- uses solid style -->
+    <i class="far fa-user"></i>
+    <!-- uses regular style -->
+    <i class="fal fa-user"></i>
+    <!-- uses light style -->
+    <!--brand icon-->
+    <i class="fab fa-github-square"></i>
+    <!-- uses brands style -->
 
-  <!--FontAwesome icons-->
-  <i class="fas fa-user"></i> <!-- uses solid style -->
-  <i class="far fa-user"></i> <!-- uses regular style -->
-  <i class="fal fa-user"></i> <!-- uses light style -->
-  <!--brand icon-->
-  <i class="fab fa-github-square"></i> <!-- uses brands style -->
+    <span id="year"></span>
 
-  <span id="year"></span>
+    <!-- END HERE -->
 
+    <!-- Jquery JS (best to use the MINIFIED version) http://code.jquery.com/ -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- END HERE -->
+    <!-- Bootstrap JS (best to not use the SLIM version as it will not include some effects) https://getbootstrap.com/docs/4.4/getting-started/introduction/ -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
 
-<!-- Jquery JS (best to use the MINIFIED version) http://code.jquery.com/ -->
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
 
-<!-- Bootstrap JS (best to not use the SLIM version as it will not include some effects) https://getbootstrap.com/docs/4.4/getting-started/introduction/ -->
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <!-- Ekko Lightbox JS (best to use the MINIFIED version) https://cdnjs.com/libraries/ekko-lightbox -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"
+      integrity="sha256-Y1rRlwTzT5K5hhCBfAFWABD4cU13QGuRN6P5apfWzVs="
+      crossorigin="anonymous"
+    ></script>
 
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!--Slick Slider JS https://kenwheeler.github.io/slick/ -->
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets/slick-1.8.1/slick/slick.min.js"
+    ></script>
 
-<!-- Ekko Lightbox JS (best to use the MINIFIED version) https://cdnjs.com/libraries/ekko-lightbox -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js" integrity="sha256-Y1rRlwTzT5K5hhCBfAFWABD4cU13QGuRN6P5apfWzVs=" crossorigin="anonymous"></script>
+    <!-- Your custom JS -->
+    <script>
+      // Slick Slider Script
+      $(".slider").slick({
+        autoplay: true,
+        autoplaySpeed: 2000,
+        pause: "hover",
+        infinite: true,
+        slideToShow: 1,
+        slideToScroll: 1,
+      });
 
-<!--Slick Slider JS https://kenwheeler.github.io/slick/ -->
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="assets/slick-1.8.1/slick/slick.min.js"></script>
-
-<!-- Your custom JS -->
-<script>
-// Slick Slider Script
-  $('.slider').slick({
-    autoplay: true,
-    autoplaySpeed: 2000,
-    pause: 'hover',
-    infinite: true,
-    slideToShow: 1,
-    slideToScroll: 1
-  });
-
-  // Get the current year for the copyright
-  $('#year').text(new Date().getFullYear());
-</script>
-</body>
+      // Get the current year for the copyright
+      $("#year").text(new Date().getFullYear());
+    </script>
+  </body>
 </html>
