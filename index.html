@@ -45,9 +45,50 @@
     <!-- Add Bootstrap links https://getbootstrap.com/docs/4.4/getting-started/introduction/ -->
     <title>Bootstrap Theme</title>
   </head>
-  <body>
-    <!-- START HERE -->
+  <body class="bg-primary" id="home" data-spy="scroll" data-target="#main-nav">
+    <!-- NAVBAR start -->
+    <nav class="navbar navbar-expand-md navbar-light fixed-top" id="main-nav">
+      <div class="container text-center">
+        <a href="#" class="navbar-brand">
+          <img src="img/Logo/DBJW_logo.svg" width="45" height="45" alt="" />
+        </a>
 
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="navbar-collapse collapse justify-content-center order-2"
+          id="navbarCollapse"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#skills" class="nav-link">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a href="#works" class="nav-link">Works</a>
+            </li>
+            <li class="nav-item">
+              <a href="#reviews" class="nav-link">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+
+          <button class="btn btn-warning btn-sm ml-auto float-right">
+            test button
+          </button>
+        </div>
+      </div>
+    </nav>
     <button class="btn btn-warning"></button>
     <!--FontAwesome icons-->
     <i class="fas fa-user"></i>
