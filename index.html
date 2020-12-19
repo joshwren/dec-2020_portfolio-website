@@ -15,6 +15,13 @@
       rel="stylesheet"
     />
 
+    <!-- Google font Roboto -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Slick Slider styles file -->
     <link
       rel="stylesheet"
@@ -36,19 +43,22 @@
       crossorigin="anonymous"
     />
 
-    <!-- Bootstrap SASS compiled CSS styles file -->
-    <link rel="stylesheet" href="css/bootstrap.css" />
-
     <!-- Custom styles SASS compiled CSS styles file -->
     <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Bootstrap SASS compiled CSS styles file -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
 
     <!-- Add Bootstrap links https://getbootstrap.com/docs/4.4/getting-started/introduction/ -->
     <title>Bootstrap Theme</title>
   </head>
-  <body class="bg-primary" id="home" data-spy="scroll" data-target="#main-nav">
+  <body id="home" data-spy="scroll" data-target="#main-nav">
     <!-- NAVBAR start -->
-    <nav class="navbar navbar-expand-md navbar-light fixed-top" id="main-nav">
-      <div class="container text-center">
+    <nav
+      class="navbar navbar-expand-md navbar-dark bg-primary fixed-top"
+      id="main-nav"
+    >
+      <div class="container text-center d-flex justify-content-between">
         <a href="#" class="navbar-brand">
           <img src="img/Logo/DBJW_logo.svg" width="45" height="45" alt="" />
         </a>
@@ -62,7 +72,7 @@
         </button>
 
         <div
-          class="navbar-collapse collapse justify-content-center order-2"
+          class="navbar-collapse collapse justify-content-center"
           id="navbarCollapse"
         >
           <ul class="navbar-nav">
@@ -82,11 +92,11 @@
               <a href="#contact" class="nav-link">Contact</a>
             </li>
           </ul>
-
-          <button class="btn btn-warning btn-sm ml-auto float-right">
-            test button
-          </button>
         </div>
+
+        <button class="btn btn-success btn-rectangle btn-inline-block">
+          test button
+        </button>
       </div>
     </nav>
     <button class="btn btn-warning"></button>

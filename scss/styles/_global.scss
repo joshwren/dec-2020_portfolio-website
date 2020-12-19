@@ -1,3 +1,5 @@
+// Broswer resets
+
 html,
 body,
 div,
@@ -84,8 +86,8 @@ video {
   border: 0;
   font-family: "Roboto", sans-serif;
   font-size: 100%;
-  vertical-align: baseline; }
-
+  vertical-align: baseline;
+}
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -98,8 +100,5 @@ hgroup,
 menu,
 nav,
 section {
-  display: block; }
-
-.btn-rectangle {
-  font-size: 0.875rem !important;
-  white-space: nowrap; }
+  display: block;
+}
