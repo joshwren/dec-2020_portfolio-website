@@ -3365,14 +3365,17 @@ textarea.form-control-lg {
     color: rgba(0, 0, 0, 0.9); }
 
 .navbar-dark {
-  font-size: 0.875rem; }
+  font-size: 0.875rem;
+  padding: 0;
+  text-align: center; }
   .navbar-dark .navbar-brand {
     color: #fff; }
     .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
       color: #fff; }
   .navbar-dark .navbar-nav .nav-link {
     color: #fff;
-    margin: 0 10px; }
+    margin: 0 10px;
+    font-weight: 500; }
     .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
       color: rgba(255, 255, 255, 0.75); }
     .navbar-dark .navbar-nav .nav-link.disabled {

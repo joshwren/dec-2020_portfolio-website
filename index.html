@@ -43,11 +43,11 @@
       crossorigin="anonymous"
     />
 
-    <!-- Custom styles SASS compiled CSS styles file -->
-    <link rel="stylesheet" href="css/style.css" />
-
     <!-- Bootstrap SASS compiled CSS styles file -->
     <link rel="stylesheet" href="css/bootstrap.css" />
+
+    <!-- Custom styles SASS compiled CSS styles file -->
+    <link rel="stylesheet" href="css/style.css" />
 
     <!-- Add Bootstrap links https://getbootstrap.com/docs/4.4/getting-started/introduction/ -->
     <title>Bootstrap Theme</title>
@@ -55,16 +55,24 @@
   <body id="home" data-spy="scroll" data-target="#main-nav">
     <!-- NAVBAR start -->
     <nav
-      class="navbar navbar-expand-md navbar-dark bg-primary fixed-top"
+      class="navbar navbar-expand-md navbar-dark bg-primary fixed-top shadow"
       id="main-nav"
     >
-      <div class="container text-center d-flex justify-content-between">
-        <a href="#" class="navbar-brand">
-          <img src="img/Logo/DBJW_logo.svg" width="45" height="45" alt="" />
+      <div
+        class="container text-center d-flex justify-content-between text-center"
+      >
+        <a href="#" class="navbar-brand center-block">
+          <img
+            class="center-block"
+            src="img/Logo/DBJW_logo.svg"
+            width="50"
+            height="50"
+            alt=""
+          />
         </a>
 
         <button
-          class="navbar-toggler"
+          class="navbar-toggler justify-content-center"
           data-toggle="collapse"
           data-target="#navbarCollapse"
         >
@@ -91,15 +99,45 @@
             <li class="nav-item">
               <a href="#contact" class="nav-link">Contact</a>
             </li>
+            <button
+              class="btn btn-success btn-rectangle btn-inline-block d-block d-md-none mb-3"
+            >
+              My Resume
+            </button>
           </ul>
         </div>
 
-        <button class="btn btn-success btn-rectangle btn-inline-block">
-          test button
+        <button
+          class="btn btn-success btn-rectangle btn-inline-block d-none d-md-block py-2 px-3"
+        >
+          My Resume
         </button>
       </div>
     </nav>
-    <button class="btn btn-warning"></button>
+    <section class="hero" id="hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h2>Hello World! I am</h2>
+            <h1>Josh Wren</h1>
+            <h3>Graphic Designer, UI/UX Designer & Web Developer</h3>
+            <button
+              class="btn btn-success btn-rectangle btn-inline-block d-inline py-2 px-3"
+            >
+              My Resume
+            </button>
+            <button
+              class="btn btn-secondary btn-rectangle btn-inline-block d-inline py-2 px-3"
+            >
+              My Resume
+            </button>
+          </div>
+          <div class="col-md-6">
+            <img src="/img/Logo/DBJW_hero_logo.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
     <!--FontAwesome icons-->
     <i class="fas fa-user"></i>
     <!-- uses solid style -->

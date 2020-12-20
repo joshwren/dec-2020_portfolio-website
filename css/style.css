@@ -100,6 +100,47 @@ nav,
 section {
   display: block; }
 
+h1 {
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: #fff; }
+
+h2 {
+  font-size: 1.375rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  color: #fff; }
+
+h3 {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: #fff; }
+
+p {
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  font-weight: 500;
+  color: #fff; }
+
+.navbar-brand {
+  text-align: center; }
+  .navbar-brand img {
+    vertical-align: middle; }
+
 .btn-rectangle {
-  font-size: 0.875rem !important;
+  font-size: 0.8125rem !important;
+  color: #fff;
+  font-weight: 500;
   white-space: nowrap; }
+
+.hero {
+  position: relative;
+  min-height: 512px;
+  background: #1d1830 url(/img/Images/Hero-background.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center bottom; }
+  .hero img {
+    position: absolute;
+    right: 7%;
+    top: 20%; }

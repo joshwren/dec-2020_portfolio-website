@@ -239,7 +239,8 @@
 // White links against a dark background
 .navbar-dark {
   font-size: 0.875rem;
-
+  padding: 0;
+  text-align: center;
   .navbar-brand {
     color: $navbar-dark-brand-color;
 
@@ -253,6 +254,8 @@
     .nav-link {
       color: $white;
       margin: 0 10px;
+      font-weight: 500;
+
       &:hover,
       &:focus {
         color: $navbar-dark-hover-color;
