@@ -6,9 +6,56 @@
   background-size: 100%;
   background-position: center bottom;
 
-  img {
-    position: absolute;
-    right: 7%;
-    top: 20%;
+  h1 {
+    font-size: 3.1875rem;
+    font-weight: 400;
   }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  h3 {
+    font-size: 0.875rem;
+  }
+
+  &__intro {
+    padding-top: 150px;
+
+    button {
+      margin-right: 10px;
+    }
+  }
+
+  &__socials {
+    position: absolute;
+    bottom: 50px;
+
+    h3 {
+      font-weight: 400;
+    }
+
+    button {
+      margin: 10px 7px 0 0;
+    }
+  }
+
+  &__logo {
+    padding-top: 120px;
+
+    img {
+      float: right;
+    }
+  }
+  /* &__img {
+    position: absolute;
+    right: 6%;
+    top: 20%;
+
+    @include respond-to("md") {
+      position: absolute;
+      right: 7%;
+      top: 20%;
+    }
+  }*/
 }

@@ -118,28 +118,54 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <h2>Hello World! I am</h2>
-            <h1>Josh Wren</h1>
-            <h3>Graphic Designer, UI/UX Designer & Web Developer</h3>
-            <button
-              class="btn btn-success btn-rectangle btn-inline-block d-inline py-2 px-3"
-            >
-              My Resume
-            </button>
-            <button
-              class="btn btn-secondary btn-rectangle btn-inline-block d-inline py-2 px-3"
-            >
-              My Resume
-            </button>
+            <div class="hero__intro">
+              <h2>Hello World! I am</h2>
+              <h1>Josh Wren</h1>
+              <h3>Graphic Designer, UI/UX Designer & Web Developer</h3>
+              <button
+                type="button"
+                class="btn btn-success btn-rectangle btn-inline-block d-inline py-2 px-3 mt-4">
+                My Resume
+              </button>
+              <button
+                type="button"
+                class="btn btn-secondary btn-rectangle btn-inline-block d-inline py-2 px-3 mt-4">
+                My Resume
+              </button>
+            </div>
+
+            <div class="hero__socials">
+              <h3 class="d-block">Find Me On</h3>
+              <button
+                type="button"
+                class="btn btn-secondary btn-socials btn-inline-block d-inline">
+                <i class="fab fa-facebook-f"></i>
+              </button>
+              <button
+                type="button"
+                class="btn btn-secondary btn-socials btn-inline-block d-inline">
+                <i class="fab fa-instagram"></i>
+              </button>
+              <button
+                type="button"
+                class="btn btn-secondary btn-socials btn-inline-block d-inline">
+                <i class="fab fa-linkedin-in"></i>
+              </button>
+              <button
+                type="button"
+                class="btn btn-secondary btn-socials btn-inline-block d-inline">
+                <i class="fab fa-github"></i>
+              </button>
+            </div>
           </div>
-          <div class="col-md-6">
-            <img src="/img/Logo/DBJW_hero_logo.svg" alt="" />
+          <div class="col-md-6 hero__logo">
+            <img class="hero__img" src="/img/Logo/DBJW_hero_logo.svg" alt="" />
           </div>
         </div>
       </div>
     </section>
     <!--FontAwesome icons-->
-    <i class="fas fa-user"></i>
+    <i class="fas fa-facebook-f"></i>
     <!-- uses solid style -->
     <i class="far fa-user"></i>
     <!-- uses regular style -->

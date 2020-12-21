@@ -103,6 +103,12 @@ section {
   display: block;
 }
 
+@media (min-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+}
+
 h1 {
   font-size: 1.75rem;
   font-weight: 500;

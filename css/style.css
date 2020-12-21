@@ -100,6 +100,9 @@ nav,
 section {
   display: block; }
 
+@media (min-width: 1200px) {
+  .container {
+    max-width: 970px; } }
 h1 {
   font-size: 1.75rem;
   font-weight: 500;
@@ -133,14 +136,58 @@ p {
   font-weight: 500;
   white-space: nowrap; }
 
+.btn-socials {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  font-size: 1rem !important;
+  color: #fff;
+  font-weight: 500;
+  white-space: nowrap; }
+  .btn-socials i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 50%;
+    transform: translate(-50%, -50%); }
+
 .hero {
   position: relative;
   min-height: 512px;
   background: #1d1830 url(/img/Images/Hero-background.svg);
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: center bottom; }
-  .hero img {
+  background-position: center bottom;
+  /* &__img {
     position: absolute;
-    right: 7%;
-    top: 20%; }
+    right: 6%;
+    top: 20%;
+
+    @include respond-to("md") {
+      position: absolute;
+      right: 7%;
+      top: 20%;
+    }
+  }*/ }
+  .hero h1 {
+    font-size: 3.1875rem;
+    font-weight: 400; }
+  .hero h2 {
+    font-size: 1rem; }
+  .hero h3 {
+    font-size: 0.875rem; }
+  .hero__intro {
+    padding-top: 150px; }
+    .hero__intro button {
+      margin-right: 10px; }
+  .hero__socials {
+    position: absolute;
+    bottom: 50px; }
+    .hero__socials h3 {
+      font-weight: 400; }
+    .hero__socials button {
+      margin: 10px 7px 0 0; }
+  .hero__logo {
+    padding-top: 120px; }
+    .hero__logo img {
+      float: right; }
