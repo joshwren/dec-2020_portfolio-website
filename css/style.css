@@ -152,8 +152,10 @@ p {
     transform: translate(-50%, -50%); }
 
 .hero {
+  display: flex;
   position: relative;
   min-height: 512px;
+  width: 100%;
   background: #1d1830 url(/img/Images/Hero-background.svg);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -176,18 +178,35 @@ p {
     font-size: 1rem; }
   .hero h3 {
     font-size: 0.875rem; }
-  .hero__intro {
-    padding-top: 150px; }
-    .hero__intro button {
-      margin-right: 10px; }
-  .hero__socials {
-    position: absolute;
-    bottom: 50px; }
-    .hero__socials h3 {
-      font-weight: 400; }
-    .hero__socials button {
-      margin: 10px 7px 0 0; }
+  .hero__text {
+    height: 100%;
+    order: 2;
+    text-align: center; }
+    @media (min-width: 768px) {
+      .hero__text {
+        height: 100%;
+        order: 1;
+        text-align: left; } }
+    .hero__text--intro {
+      padding-top: 190px; }
+      .hero__text--intro button {
+        margin-right: 10px; }
+    .hero__text--socials {
+      margin: 130px 0 45px 0; }
+      .hero__text--socials h3 {
+        font-weight: 400; }
+      .hero__text--socials button {
+        margin: 10px 7px 0 0; }
   .hero__logo {
-    padding-top: 120px; }
-    .hero__logo img {
-      float: right; }
+    padding-top: 120px;
+    padding-left: 70px;
+    order: 1;
+    text-align: center; }
+    @media (min-width: 768px) {
+      .hero__logo {
+        padding-top: 150px;
+        padding-left: 0;
+        order: 2;
+        text-align: center; }
+        .hero__logo img {
+          float: right; } }

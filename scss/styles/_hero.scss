@@ -1,6 +1,8 @@
 .hero {
+  display: flex;
   position: relative;
   min-height: 512px;
+  width: 100%;
   background: $darkPurple url(/img/Images/Hero-background.svg);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -19,33 +21,58 @@
     font-size: 0.875rem;
   }
 
-  &__intro {
-    padding-top: 150px;
+  &__text {
+    height: 100%;
+    order: 2;
+    text-align: center;
 
-    button {
-      margin-right: 10px;
+    @include respond-to("md") {
+      height: 100%;
+      order: 1;
+      text-align: left;
     }
+
+    &--intro {
+      padding-top: 190px;
+  
+      button {
+        margin-right: 10px;
+      }
+    }
+  
+    &--socials {
+      margin: 130px 0 45px 0;
+  
+      h3 {
+        font-weight: 400;
+      }
+  
+      button {
+        margin: 10px 7px 0 0;
+      }
+    }
+
   }
 
-  &__socials {
-    position: absolute;
-    bottom: 50px;
-
-    h3 {
-      font-weight: 400;
-    }
-
-    button {
-      margin: 10px 7px 0 0;
-    }
-  }
 
   &__logo {
     padding-top: 120px;
+    padding-left: 70px;
+    order: 1;
+    text-align: center;
 
-    img {
-      float: right;
+    @include respond-to("md") {
+      padding-top: 150px;
+      padding-left: 0;
+      order: 2;
+      text-align: center;
+
+      img {
+        float: right;
+      }
     }
+
+    
   }
   /* &__img {
     position: absolute;
