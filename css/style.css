@@ -126,7 +126,8 @@ p {
   color: #fff; }
 
 section {
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
 
 .dashed-circle {
   position: absolute;
