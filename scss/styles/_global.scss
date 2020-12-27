@@ -103,9 +103,9 @@ section {
   display: block;
 }
 
-@media (min-width: 1200px) {
+ @media (min-width: 1200px) {
   .container {
-    max-width: 970px;
+    max-width: 1200px;
   }
 }
 
@@ -134,3 +134,33 @@ p {
   font-weight: 500;
   color: #fff;
 }
+
+section {
+  position: relative;
+}
+
+.dashed-circle {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  bottom: -125px;
+
+ &--white {
+  border: 1.5px dashed #fff;
+ }
+
+ &--success {
+  border: 1.5px dashed #fc4e55;
+ }
+
+ &--right {
+  right: -125px;
+ }
+
+ &--left {
+  left: -125px;
+ }
+}
+
+

@@ -1,24 +1,51 @@
-.btn-rectangle {
-  font-size: 0.8125rem !important;
-  color: #fff;
-  font-weight: 500;
-  white-space: nowrap;
-}
+.btn {
+  transition: all .2s ease-in-out;
 
-.btn-socials {
-  position: relative;
-  width: 30px;
-  height: 30px;
-  font-size: 1rem !important;
-  color: #fff;
-  font-weight: 500;
-  white-space: nowrap;
+  &-success {
 
-  i {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    height: 50%;
-    transform: translate(-50%, -50%);
+    &:hover {
+      color: rgba(#fff, 1);
+      transform: scale(1.07);
+    }
+  }
+
+  &-secondary {
+    
+    &:hover {
+      background-color: rgba(#fff, 0.1) !important;
+      transform: scale(1.07);
+    }
+  }
+
+  &-rectangle {
+    font-size: 0.8125rem !important;
+    color: #fff;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  
+  &-socials {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    font-size: 1rem !important;
+    color: #fff;
+    font-weight: 500;
+    white-space: nowrap;
+  
+    i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      height: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
 }
+
+a {
+text-decoration: none;
+}
+
+
+
