@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="20.006px" height="19.026px" viewBox="0 0 20.006 19.026" enable-background="new 0 0 20.006 19.026" xml:space="preserve">
+<g id="Layer_3">
+</g>
+<g id="Layer_2">
+	<g>
+		<defs>
+			<rect id="SVGID_1_" x="-187.66" y="-168.093" width="1024" height="126"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  overflow="visible"/>
+		</clipPath>
+		<g clip-path="url(#SVGID_2_)">
+			<circle fill-rule="evenodd" clip-rule="evenodd" fill="#130E24" cx="63.794" cy="-67.73" r="97.638"/>
+			<circle fill-rule="evenodd" clip-rule="evenodd" fill="#130E24" cx="261.794" cy="-35.418" r="62.325"/>
+			<circle fill-rule="evenodd" clip-rule="evenodd" fill="#130E24" cx="324.794" cy="-33.63" r="31.113"/>
+			<circle fill-rule="evenodd" clip-rule="evenodd" fill="#130E24" cx="757.656" cy="-41.95" r="102.316"/>
+			<circle fill-rule="evenodd" clip-rule="evenodd" fill="#130E24" cx="611.656" cy="-13.863" r="68.229"/>
+			<circle fill-rule="evenodd" clip-rule="evenodd" fill="#0E0A18" cx="-41.344" cy="-41.863" r="68.229"/>
+			<circle fill-rule="evenodd" clip-rule="evenodd" fill="#0E0A18" cx="-172.943" cy="-41.863" r="41.828"/>
+		</g>
+	</g>
+	<polygon fill="#FFFFFF" points="10.003,0 12.613,6.925 20.006,7.268 14.227,11.89 16.186,19.026 10.003,14.959 3.82,19.026 
+		5.778,11.89 0,7.268 7.393,6.925 	"/>
+</g>
+</svg>
