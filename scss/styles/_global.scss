@@ -109,6 +109,10 @@ section {
   }
 }
 
+body {
+  overflow-x: hidden;
+}
+
 h1 {
   font-size: 1.75rem;
   font-weight: 500;
@@ -147,15 +151,20 @@ p {
 
 section {
   position: relative;
-  overflow: hidden;
+  z-index: 1;
 }
+
+$size: 180px;
 
 .dashed-circle {
   position: absolute;
-  width: 250px;
-  height: 250px;
-  border-radius: 100%;
-  bottom: -125px;
+  height: $size * 2;
+  width: $size;
+  border-bottom-left-radius: $size * 2;
+  border-top-left-radius: $size * 2;
+  bottom: -180px;
+  z-index: 100;
+
 
  &--white {
   border: 1.5px dashed #fff;
@@ -166,11 +175,11 @@ section {
  }
 
  &--right {
-  right: -125px;
+  right: -1px;
  }
 
  &--left {
-  left: -125px;
+  left: -1px;
  }
 }
 
