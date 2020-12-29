@@ -10,6 +10,22 @@
     border-radius: 10px !important;
     padding: 25px 15px 13px 15px;
 
+    &--3 {
+      margin-top: 40px;
+
+      @include respond-to("lg") {
+      margin-top: 0px;
+      }
+    }
+
+    &--4 {
+      margin-top: 40px;
+
+      @include respond-to("lg") {
+      margin-top: 0px;
+      }
+    }
+
     &--icon {
       display: flex;
       align-items: center;
@@ -30,5 +46,6 @@
 
   p {
     line-height: 1.5rem;
+    font-weight: 500;
   }
 }

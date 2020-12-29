@@ -130,9 +130,19 @@ h3 {
 
 p {
   font-size: 0.75rem;
-  line-height: 1.125rem;
-  font-weight: 500;
+  line-height: 1.4rem;
+  font-weight: 400;
   color: #fff;
+
+  br {
+    display: block; /* makes it have a width */
+    content: ""; /* clears default height */
+    margin-top: 10px; /* change this to whatever height you want it */
+}
+}
+
+.pink-accent {
+  color: $brandPink;
 }
 
 section {
@@ -152,7 +162,7 @@ section {
  }
 
  &--success {
-  border: 1.5px dashed #fc4e55;
+  border: 1.5px dashed $brandPink;
  }
 
  &--right {
@@ -179,12 +189,12 @@ section {
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background:#fc4e55; 
+  background:$brandPink; 
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #c03b3f; 
+  background: $brandPink; 
 }
 

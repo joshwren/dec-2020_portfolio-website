@@ -184,7 +184,7 @@
     <section class="highlights bg-secondary" id="highlights">
       <div class="container">
         <div class="row highlights__row">
-          <div class="col-md-3">
+          <div class="col-6 col-lg-3">
             <div class="card highlights__card border-success bg-secondary">
               <div class="card-body">
                 <div class="highlights__card--icon bg-success">
@@ -195,7 +195,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-6 col-lg-3">
             <div class="card highlights__card border-success bg-secondary">
               <div class="card-body">
                 <div class="highlights__card--icon bg-success">
@@ -206,8 +206,8 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3">
-            <div class="card highlights__card border-success bg-secondary">
+          <div class="col-6 col-lg-3">
+            <div class="card highlights__card highlights__card--3 border-success bg-secondary">
               <div class="card-body">
                 <div class="highlights__card--icon bg-success">
                   <img src="img/Icons/profile-icon.svg" alt="Profile icon">
@@ -217,8 +217,8 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3">
-            <div class="card highlights__card border-success bg-secondary">
+          <div class="col-6 col-lg-3">
+            <div class="card highlights__card highlights__card--4 border-success bg-secondary">
               <div class="card-body">
                 <div class="highlights__card--icon bg-success">
                   <img src="img/Icons/coffee-icon.svg" alt="Coffee icon">
@@ -238,19 +238,37 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <h3>About Me<span class="pink-accent">....</span></h3>
-            <h1>Graphic Designer andWeb Developer</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porttitor feugiat ipsum quis ullamcorper. Nullam vitae velit vitae tortor semper tempor ac vitae magna. Maecenas a ullamcorper neque. Aliquam vitae tortor luctus nisi rutrum eleifend non non leo.</p>
-
-            <div id="collapse" style="display:none">
-                <p>Sed eleifend lectus id semper accumsan. Sed lobortis id ligula eget blandit. Integer interdum iaculis nunc, sed porttitor magna tincidunt in. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam lobortis accumsan tempor. Aliquam sollicitudin pulvinar est, quis convallis tellus.</p>
+            <div class="about__content d-flex align-items-center">
+              <div>
+                <h3>About Me<span class="pink-accent">....</span></h3>
+                <h1>Graphic Designer andWeb Developer</h1>
+                <p>
+                  Hi, my name is Joshua Wren and I am a highly motivated and courageous Graphic Designer, Signage/Wayfinding Designer and Web Developer, living in Canberra ACT. I am extremely interested in all parts of design, but particularly enjoy publication design, infographic design and web design/development in general...</p>
+    
+                <div id="collapse" style="display:none">
+                    <p>I have a Bachelor Degree in Graphic Design & Multi-Media acquired with my studies through the University of Canberra (UC). Along with that I posses an Advanced Diploma in Graphic Design & Digital Media studied through Canberra Institute of Technology (CIT).
+                    <br>
+                    I am currently studying for a Bachelor Degree in Web Design and Production through the University of Canberra (UC) in order to develop my skills and experience within digital design and development.
+                    <br>
+                    I have been in the design industry for over ten years â€“ three and a half years within signage design/production and eight plus years within print and digital design.</p>
+                </div>
+                <a href="#collapse" class="nav-toggle btn btn-success btn-rectangle py-2 px-3 mt-4">
+                      Know More
+                </a>
+              </div>
             </div>
-            <a href="#collapse" class="nav-toggle">Read More</a>
           </div>
 
           
           <div class="col-md-6">
-            
+            <div class="about__image">
+              <div class="about__image--backing">
+                &nbsp
+              </div>
+              <div class="about__image--img">
+                <img src="img/Images/profile-pic-hi-dpi.jpg" alt="About image">
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -329,9 +347,9 @@
         var toggle_switch = $(this);
         $(collapse_content_selector).toggle(function () {
             if ($(this).css('display') == 'none') {
-                toggle_switch.html('Read More');
+                toggle_switch.html('Know More');
             } else {
-                toggle_switch.html('Read Less');
+                toggle_switch.html('Know Less');
             }
         });
     });
