@@ -137,12 +137,6 @@ p {
   line-height: 1.4rem;
   font-weight: 400;
   color: #fff;
-
-  br {
-    display: block; /* makes it have a width */
-    content: ""; /* clears default height */
-    margin-top: 10px; /* change this to whatever height you want it */
-}
 }
 
 .pink-accent {
@@ -154,33 +148,50 @@ section {
   z-index: 1;
 }
 
-$size: 180px;
+$lg-size: 150px;
+$md-size: 125px;
+$sm-size: 100px;
 
 .dashed-circle {
   position: absolute;
-  height: $size * 2;
-  width: $size;
-  border-bottom-left-radius: $size * 2;
-  border-top-left-radius: $size * 2;
-  bottom: -180px;
+  height: $sm-size * 2;
+  width: $sm-size;
+  border-bottom-left-radius: $sm-size * 2;
+  border-top-left-radius: $sm-size * 2;
+  top: -100px;
   z-index: 100;
 
+  @include respond-to("md") {
+    height: $md-size * 2;
+    width: $md-size;
+    border-bottom-left-radius: $md-size * 2;
+    border-top-left-radius: $md-size * 2;
+    top: -125px;
+  }
 
- &--white {
-  border: 1.5px dashed #fff;
- }
+  @include respond-to("lg") {
+    height: $lg-size * 2;
+    width: $lg-size;
+    border-bottom-left-radius: $lg-size * 2;
+    border-top-left-radius: $lg-size * 2;
+    top: -150px;
+  }
 
- &--success {
-  border: 1.5px dashed $brandPink;
- }
+  &--white {
+    border: 1.5px dashed #fff;
+  }
 
- &--right {
-  right: -1px;
- }
+  &--success {
+    border: 1.5px dashed $brandPink;
+  }
 
- &--left {
-  left: -1px;
- }
+  &--right {
+    right: -1px;
+  }
+
+  &--left {
+    left: -1px;
+  }
 }
 
 // SCROLL BAR STYLES

@@ -1,0 +1,15 @@
+.skills {
+  padding: 70px 0;
+
+  &__card {
+
+    h1 {
+      font-size: 1.25rem;
+    }
+
+    h2 {
+      font-size: 1rem;
+      color: $brandPink;
+    }
+  }
+}

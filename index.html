@@ -230,21 +230,19 @@
           </div>
         </div>
       </div>
-      <div class="dashed-circle dashed-circle--white dashed-circle--right">&nbsp</div>
     </section>
     <!-- HIGHLIGHTS SECTION ENDS -->
     <!-- ABOUT SECTION STARTS -->
     <section class="about bg-primary" id="about">
       <div class="container">
-        <div class="row">
-          <div class="col-md-6">
+        <div class="row d-flex">
+          <div class="col-md-6 order-2 order-md-1">
             <div class="about__content d-flex align-items-center">
               <div class="about__content--text">
                 <h3>About Me<span class="pink-accent">....</span></h3>
                 <h1>Graphic Designer andWeb Developer</h1>
-                <p>
+                <p class="mb-2">
                   Hi, my name is Joshua Wren and I am a highly motivated and courageous Graphic Designer, Signage/Wayfinding Designer and Web Developer, living in Canberra ACT. I am extremely interested in all parts of design, but particularly enjoy publication design, infographic design and web design/development in general...</p>
-    
                 <div id="collapse" style="display:none">
                     <p>I have a Bachelor Degree in Graphic Design & Multi-Media acquired with my studies through the University of Canberra (UC). Along with that I posses an Advanced Diploma in Graphic Design & Digital Media studied through Canberra Institute of Technology (CIT).
                     <br>
@@ -258,21 +256,141 @@
               </div>
             </div>
           </div>
-
           
-          <div class="col-md-6">
+          <div class="col-md-6 order-1 order-md-2">
             <div class="about__image">
               <div class="about__image--backing">
                 &nbsp
               </div>
               <div class="about__image--img">
-                <img src="img/Images/profile-pic-hi-dpi.jpg" alt="About image">
+                <picture>
+                  <!-- Medium devices (tablets, 768px and up) --> 
+                  <source media="(min-width: 768px)" srcset="img/Images/profile-pic.jpg">
+                    <img src="img/Images/profile-pic-landscape.jpg" alt="About image">
+              </picture>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dashed-circle dashed-circle--white dashed-circle--right">&nbsp</div>
+    </section>
+    <!-- ABOUT SECTION ENDS -->
+    <!-- SKILLS SECTION STARTS -->
+    <section class="skills bg-secondary" id="skills">
+      <div class="container">
+        <div class="row text-center">
+          <h3>Qualifications<span class="pink-accent">....</span></h3>
+          <h1>Experience & Skills</h1>
+        </div>
+        <div class="row mt-4">
+          <!-- First column -->
+          <div class="col-md-4">
+            <h2>Qualifications<span class="pink-accent">....</span></h2>
+
+            <div class="card skills__card my-4 p-2 bg-primary">
+              <div class="card-body">
+                <h1>Bachelor Degree</h1>
+                <h2>Web Design and Production</h2>
+                <p>University of Canberra (ACT) 
+                  <br>
+                  2017 - Present</p>
+              </div>
+            </div>
+
+            <div class="card skills__card my-4 p-2 bg-primary">
+              <div class="card-body">
+                <h1>Bachelor Degree</h1>
+                <h2>Web Design and Production</h2>
+                <p>University of Canberra (ACT) 
+                  <br>
+                  2017 - Present</p>
+              </div>
+            </div>
+
+            <div class="card skills__card my-4 p-2 bg-primary">
+              <div class="card-body">
+                <h1>Bachelor Degree</h1>
+                <h2>Web Design and Production</h2>
+                <p>University of Canberra (ACT) 
+                  <br>
+                  2017 - Present</p>
+              </div>
+            </div>
+          </div>
+          <!-- Second column -->
+          <div class="col-md-4">
+            <h2 class="mb-4">Qualifications<span class="pink-accent">....</span></h2>
+
+            <div class="card bg-primary">
+              <div class="card-body">
+                <h1>Bachelor Degree</h1>
+                <h2>Web Design and Production</h2>
+                <p>University of Canberra (ACT) 
+                  <br>
+                  2017 - Present</p>
+              </div>
+            </div>
+
+            <div class="card bg-primary">
+              <div class="card-body">
+                <h1>Bachelor Degree</h1>
+                <h2>Web Design and Production</h2>
+                <p>University of Canberra (ACT) 
+                  <br>
+                  2017 - Present</p>
+              </div>
+            </div>
+
+            <div class="card bg-primary">
+              <div class="card-body">
+                <h1>Bachelor Degree</h1>
+                <h2>Web Design and Production</h2>
+                <p>University of Canberra (ACT) 
+                  <br>
+                  2017 - Present</p>
+              </div>
+            </div>
+          </div>
+          <!-- Third column -->
+          <div class="col-md-4">
+            <h2 class="mb-4">Qualifications<span class="pink-accent">....</span></h2>
+
+            <div class="card bg-primary">
+              <div class="card-body">
+                <h1>Bachelor Degree</h1>
+                <h2>Web Design and Production</h2>
+                <p>University of Canberra (ACT) 
+                  <br>
+                  2017 - Present</p>
+              </div>
+            </div>
+
+            <div class="card bg-primary">
+              <div class="card-body">
+                <h1>Bachelor Degree</h1>
+                <h2>Web Design and Production</h2>
+                <p>University of Canberra (ACT) 
+                  <br>
+                  2017 - Present</p>
+              </div>
+            </div>
+
+            <div class="card bg-primary">
+              <div class="card-body">
+                <h1>Bachelor Degree</h1>
+                <h2>Web Design and Production</h2>
+                <p>University of Canberra (ACT) 
+                  <br>
+                  2017 - Present</p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- SKILLS SECTION ENDS -->
+
     <!--FontAwesome icons-->
     <i class="fas fa-facebook-f"></i>
     <!-- uses solid style -->
@@ -341,6 +459,7 @@
         slideToScroll: 1,
       });
 
+      // Read More collapse module    
       $(document).ready(function () {
     $('.nav-toggle').click(function () {
         var collapse_content_selector = $(this).attr('href');
