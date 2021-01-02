@@ -1,7 +1,9 @@
 .skills {
   padding: 70px 0;
 
+
   &__card {
+    position: relative;
 
     h1 {
       font-size: 1.25rem;
@@ -10,6 +12,28 @@
     h2 {
       font-size: 1rem;
       color: $brandPink;
+    }
+
+    &--icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 50px;
+      width: 50px;
+      border-radius: 100%;
+      text-align: center;
+
+      position: absolute;
+      top: 25px;
+      left: 25px;
+
+      img {
+        transform: scale(1.2);
+      }
+    }
+
+    &--experience {
+      padding-left: 73px !important
     }
   }
 }
