@@ -115,6 +115,7 @@ body {
 
 h1 {
   font-size: 1.75rem;
+  line-height: 2.25rem;
   font-weight: 500;
   color: #fff;
 }
@@ -145,7 +146,6 @@ p {
 
 section {
   position: relative;
-  z-index: 1;
 }
 
 $lg-size: 150px;

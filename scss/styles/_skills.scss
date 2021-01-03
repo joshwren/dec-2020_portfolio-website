@@ -16,11 +16,17 @@
 
     h1 {
       font-size: 1.25rem;
+      line-height: 1.75rem;
     }
 
     h2 {
       font-size: 1rem;
+      line-height: 1.3rem;
       color: $brandPink;
+    }
+
+    p {
+      margin-top: 5px;
     }
 
     &--icon {
@@ -37,7 +43,7 @@
       left: 25px;
 
       img {
-        transform: scale(1.2);
+        transform: scale(1.5);
       }
     }
 

@@ -42,6 +42,25 @@
         transform: scale(1.2);
       }
     }
+
+    &--cert {
+
+      h1 {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+      }
+    
+      h2 {
+        font-size: 1rem;
+        line-height: 1.3rem;
+        color: $brandPink;
+      }
+    
+      p {
+        margin-top: 5px;
+      }
+  
+    }
   }
 
   p {
