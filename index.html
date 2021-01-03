@@ -608,9 +608,6 @@ This part is straight out of Bootstrap docs. Just a carousel inside a modal.
   </div>
 </div>
 
-
-
-
 <!-- Custom Styling Toggle. For demo purposes only. -->
 <div class="switch-wrap">
   <label class="switch">
@@ -651,15 +648,9 @@ This part is straight out of Bootstrap docs. Just a carousel inside a modal.
       crossorigin="anonymous"
     ></script>
 
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
-
     <!-- Ekko Lightbox JS (best to use the MINIFIED version) https://cdnjs.com/libraries/ekko-lightbox -->
     <script
-      src="lightbox-plus-jquery.js"
+      src="js/lightbox.js"
     ></script>
 
     <!--Slick Slider JS https://kenwheeler.github.io/slick/ -->
@@ -700,24 +691,7 @@ This part is straight out of Bootstrap docs. Just a carousel inside a modal.
                 }
             });
         });
-
       });
-      // Lightbox Init
-      function switchStyle() {
-        if (document.getElementById('styleSwitch').checked) {
-          document.getElementById('gallery').classList.add("custom");
-          document.getElementById('exampleModal').classList.add("custom");
-        } else {
-          document.getElementById('gallery').classList.remove("custom");
-          document.getElementById('exampleModal').classList.remove("custom");
-        }
-      }
-
-      // Lightbox Init
-    $(document).on('click', '[data-toggle="lightbox"]', function (event) {
-      event.preventDefault();
-      $(this).ekkoLightbox();
-    });
 
       // Get the current year for the copyright
       $("#year").text(new Date().getFullYear());
