@@ -420,8 +420,15 @@ a {
 */
 .skills {
   padding: 70px 0; }
+  .skills__cardHeading {
+    text-align: center; }
+    @media (min-width: 768px) {
+      .skills__cardHeading {
+        text-align: left; } }
   .skills__card {
-    position: relative; }
+    position: relative;
+    margin: 13px 0;
+    padding: 9px 15px; }
     .skills__card h1 {
       font-size: 1.25rem; }
     .skills__card h2 {
@@ -442,3 +449,30 @@ a {
         transform: scale(1.2); }
     .skills__card--experience {
       padding-left: 73px !important; }
+    .skills__card ul {
+      list-style: none;
+      color: #fff; }
+      .skills__card ul li {
+        font-size: 1rem;
+        line-height: 2rem;
+        float: left;
+        width: 50%; }
+        @media (min-width: 992px) {
+          .skills__card ul li {
+            float: left;
+            width: 100%; } }
+        .skills__card ul li::before {
+          position: relative;
+          top: 4px;
+          content: "\2022";
+          /* Add content: \2022 is the CSS Code/unicode for a bullet */
+          font-size: 1.5rem;
+          color: #fc4e55;
+          /* Change the color */
+          font-weight: 900;
+          /* If you want it to be bold */
+          display: inline-block;
+          /* Needed to add space between the bullet and the text */
+          width: 1.25rem;
+          /* Also needed for space (tweak if needed) */
+          margin-left: -5px; }

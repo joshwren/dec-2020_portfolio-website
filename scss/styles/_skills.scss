@@ -1,9 +1,18 @@
 .skills {
   padding: 70px 0;
 
+  &__cardHeading {
+    text-align: center;
 
+    @include respond-to("md") {
+      text-align: left;
+    }
+  }
+  
   &__card {
     position: relative;
+    margin: 13px 0;
+    padding: 9px 15px;
 
     h1 {
       font-size: 1.25rem;
@@ -33,7 +42,36 @@
     }
 
     &--experience {
-      padding-left: 73px !important
+      padding-left: 73px !important;
+    }
+
+    ul {
+      list-style: none;
+      color: #fff;
+
+      li {
+        font-size: 1rem;
+        line-height: 2rem;
+        float: left;
+        width: 50%;
+
+        @include respond-to("lg") {
+          float: left;
+          width: 100%;
+        }
+
+        &::before {
+          position: relative;
+          top: 4px;
+          content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+          font-size: 1.5rem;
+          color: $brandPink; /* Change the color */
+          font-weight: 900; /* If you want it to be bold */
+          display: inline-block; /* Needed to add space between the bullet and the text */
+          width: 1.25rem; /* Also needed for space (tweak if needed) */
+          margin-left: -5px;
+        }
+      }
     }
   }
 }
