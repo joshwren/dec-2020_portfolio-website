@@ -50,13 +50,14 @@ $bootstrap-xl: 1200px;
   transition: 0.3s;
 }
 
-#gallery.custom {
+#gallery{
   padding: 0 15px;
   
   img {
     display: block;
     margin: 15px 0;
     border-radius: 300px 30px 300px 300px;
+    cursor: pointer;
     
     &:hover {
       border-radius: 30px 90px 30px 30px;
@@ -64,7 +65,7 @@ $bootstrap-xl: 1200px;
   }
 }
 
-#exampleModal.custom {
+.customModal {
   .modal-content {
     background: none;
     border: none;
@@ -80,7 +81,7 @@ $bootstrap-xl: 1200px;
       opacity: 1;
       position: relative;
       top: 3px;
-      border: solid 2px white;
+      border: solid 2px $brandPink;
       
       @media (min-width: $bootstrap-lg) {
         top: 15px;
@@ -107,7 +108,7 @@ $bootstrap-xl: 1200px;
       width: 50px;
       display: block;
       position: absolute;
-      background: white;
+      background: $brandPink;
       border-radius: 3px 10px;
       
       @media (min-width: $bootstrap-md) {
@@ -149,7 +150,7 @@ $bootstrap-xl: 1200px;
     
     .btn {
       margin: auto;
-      border: solid 2px white;
+      border: solid 2px $brandPink;
       background: none;
       text-transform: uppercase;
       font-size: 0.8em;
@@ -159,7 +160,8 @@ $bootstrap-xl: 1200px;
       
       &:hover {
         background: white;
-        color: black;
+        color: $brandPink;
+        border: solid 2px #fff;
       }
     }
   }

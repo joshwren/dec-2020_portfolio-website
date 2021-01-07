@@ -139,32 +139,30 @@ section {
   position: absolute;
   height: 200px;
   width: 100px;
-  border-bottom-left-radius: 200px;
-  border-top-left-radius: 200px;
   top: -100px;
   z-index: 100; }
   @media (min-width: 768px) {
     .dashed-circle {
       height: 250px;
       width: 125px;
-      border-bottom-left-radius: 250px;
-      border-top-left-radius: 250px;
       top: -125px; } }
   @media (min-width: 992px) {
     .dashed-circle {
       height: 300px;
       width: 150px;
-      border-bottom-left-radius: 300px;
-      border-top-left-radius: 300px;
       top: -150px; } }
   .dashed-circle--white {
     border: 1.5px dashed #fff; }
   .dashed-circle--success {
     border: 1.5px dashed #fc4e55; }
   .dashed-circle--right {
-    right: -1px; }
+    right: -1px;
+    border-bottom-left-radius: 200px;
+    border-top-left-radius: 200px; }
   .dashed-circle--left {
-    left: -1px; }
+    left: -1px;
+    border-bottom-right-radius: 200px;
+    border-top-right-radius: 200px; }
 
 /* width */
 ::-webkit-scrollbar {
@@ -309,6 +307,15 @@ a {
     @media (min-width: 992px) {
       .highlights__card--4 {
         margin-top: 0px; } }
+  .highlights__card--cert h1 {
+    font-size: 1.25rem;
+    line-height: 1.75rem; }
+  .highlights__card--cert h2 {
+    font-size: 1rem;
+    line-height: 1.3rem;
+    color: #fc4e55; }
+  .highlights__card--cert p {
+    margin-top: 7px; }
   .highlights__card--icon {
     display: flex;
     align-items: center;
@@ -321,15 +328,8 @@ a {
     top: -26px; }
     .highlights__card--icon img {
       transform: scale(1.2); }
-  .highlights__card--cert h1 {
-    font-size: 1.25rem;
-    line-height: 1.75rem; }
-  .highlights__card--cert h2 {
-    font-size: 1rem;
-    line-height: 1.3rem;
-    color: #fc4e55; }
-  .highlights__card--cert p {
-    margin-top: 5px; }
+    .highlights__card--icon--cursorPointer {
+      cursor: pointer; }
 .highlights p {
   line-height: 1.5rem;
   font-weight: 500; }
@@ -520,120 +520,122 @@ a {
 * {
   transition: 0.3s; }
 
-#gallery.custom {
+#gallery {
   padding: 0 15px; }
-  #gallery.custom img {
+  #gallery img {
     display: block;
     margin: 15px 0;
-    border-radius: 300px 30px 300px 300px; }
-    #gallery.custom img:hover {
+    border-radius: 300px 30px 300px 300px;
+    cursor: pointer; }
+    #gallery img:hover {
       border-radius: 30px 90px 30px 30px; }
 
-#exampleModal.custom .modal-content {
+.customModal .modal-content {
   background: none;
   border: none; }
-#exampleModal.custom .modal-header {
+.customModal .modal-header {
   border: none; }
-  #exampleModal.custom .modal-header button {
+  .customModal .modal-header button {
     background: none;
     border-radius: 100px 100px 0 0;
     padding: 5px 10px;
     opacity: 1;
     position: relative;
     top: 3px;
-    border: solid 2px white; }
+    border: solid 2px #fc4e55; }
     @media (min-width: 992px) {
-      #exampleModal.custom .modal-header button {
+      .customModal .modal-header button {
         top: 15px; } }
-    #exampleModal.custom .modal-header button:hover {
+    .customModal .modal-header button:hover {
       top: 3px; }
-  #exampleModal.custom .modal-header span {
+  .customModal .modal-header span {
     color: white; }
-#exampleModal.custom .modal-body {
+.customModal .modal-body {
   padding: 0;
   border: none;
   position: relative; }
-  #exampleModal.custom .modal-body::before, #exampleModal.custom .modal-body::after {
+  .customModal .modal-body::before, .customModal .modal-body::after {
     content: '';
     height: 50px;
     width: 50px;
     display: block;
     position: absolute;
-    background: white;
+    background: #fc4e55;
     border-radius: 3px 10px; }
     @media (min-width: 768px) {
-      #exampleModal.custom .modal-body::before, #exampleModal.custom .modal-body::after {
+      .customModal .modal-body::before, .customModal .modal-body::after {
         border-radius: 3px 30px;
         height: 100px;
         width: 100px; } }
-  #exampleModal.custom .modal-body::before {
+  .customModal .modal-body::before {
     top: -5px;
     left: -5px; }
     @media (min-width: 768px) {
-      #exampleModal.custom .modal-body::before {
+      .customModal .modal-body::before {
         top: -15px;
         left: -15px; } }
-  #exampleModal.custom .modal-body::after {
+  .customModal .modal-body::after {
     bottom: -5px;
     right: -5px;
     z-index: -1; }
     @media (min-width: 768px) {
-      #exampleModal.custom .modal-body::after {
+      .customModal .modal-body::after {
         bottom: -15px;
         right: -15px; } }
-#exampleModal.custom .modal-footer {
+.customModal .modal-footer {
   border: none;
   margin-top: 60px; }
   @media (min-width: 992px) {
-    #exampleModal.custom .modal-footer {
+    .customModal .modal-footer {
       margin-top: 40px; } }
-  #exampleModal.custom .modal-footer .btn {
+  .customModal .modal-footer .btn {
     margin: auto;
-    border: solid 2px white;
+    border: solid 2px #fc4e55;
     background: none;
     text-transform: uppercase;
     font-size: 0.8em;
     letter-spacing: 0.1em;
     font-weight: bold;
     padding: 0.2em 0.7em; }
-    #exampleModal.custom .modal-footer .btn:hover {
+    .customModal .modal-footer .btn:hover {
       background: white;
-      color: black; }
-#exampleModal.custom .carousel-control-prev, #exampleModal.custom .carousel-control-next {
+      color: #fc4e55;
+      border: solid 2px #fff; }
+.customModal .carousel-control-prev, .customModal .carousel-control-next {
   font-size: 2em;
   top: auto;
   opacity: 1;
   bottom: -52px; }
   @media (min-width: 768px) {
-    #exampleModal.custom .carousel-control-prev, #exampleModal.custom .carousel-control-next {
+    .customModal .carousel-control-prev, .customModal .carousel-control-next {
       top: 0;
       opacity: 0.5;
       bottom: 0; } }
-#exampleModal.custom .carousel-control-next-icon, #exampleModal.custom .carousel-control-prev-icon {
+.customModal .carousel-control-next-icon, .customModal .carousel-control-prev-icon {
   height: 30px;
   width: 30px; }
 @media (min-width: 768px) {
-  #exampleModal.custom .carousel-control-prev {
+  .customModal .carousel-control-prev {
     left: -90px; } }
 @media (min-width: 768px) {
-  #exampleModal.custom .carousel-control-next {
+  .customModal .carousel-control-next {
     right: -90px; } }
-#exampleModal.custom .carousel-indicators {
+.customModal .carousel-indicators {
   bottom: -60px; }
   @media (min-width: 992px) {
-    #exampleModal.custom .carousel-indicators {
+    .customModal .carousel-indicators {
       bottom: -30px; } }
-  #exampleModal.custom .carousel-indicators li {
+  .customModal .carousel-indicators li {
     height: 30px;
     border-radius: 100px;
     background: none;
     border: solid 2px white; }
     @media (min-width: 992px) {
-      #exampleModal.custom .carousel-indicators li {
+      .customModal .carousel-indicators li {
         height: 10px; } }
-    #exampleModal.custom .carousel-indicators li:hover {
+    .customModal .carousel-indicators li:hover {
       background: white; }
-    #exampleModal.custom .carousel-indicators li.active {
+    .customModal .carousel-indicators li.active {
       background: white; }
 
 /* The switch - the box around the slider */

@@ -156,24 +156,18 @@ $sm-size: 100px;
   position: absolute;
   height: $sm-size * 2;
   width: $sm-size;
-  border-bottom-left-radius: $sm-size * 2;
-  border-top-left-radius: $sm-size * 2;
   top: -100px;
   z-index: 100;
 
   @include respond-to("md") {
     height: $md-size * 2;
     width: $md-size;
-    border-bottom-left-radius: $md-size * 2;
-    border-top-left-radius: $md-size * 2;
     top: -125px;
   }
 
   @include respond-to("lg") {
     height: $lg-size * 2;
     width: $lg-size;
-    border-bottom-left-radius: $lg-size * 2;
-    border-top-left-radius: $lg-size * 2;
     top: -150px;
   }
 
@@ -187,10 +181,14 @@ $sm-size: 100px;
 
   &--right {
     right: -1px;
+    border-bottom-left-radius: $sm-size * 2;
+    border-top-left-radius: $sm-size * 2;
   }
 
   &--left {
     left: -1px;
+    border-bottom-right-radius: $sm-size * 2;
+    border-top-right-radius: $sm-size * 2;
   }
 }
 
