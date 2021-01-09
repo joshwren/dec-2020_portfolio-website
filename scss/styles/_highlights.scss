@@ -63,6 +63,11 @@
 
       &--cursorPointer {
         cursor: pointer;
+
+        &:hover {
+          background-color: #f86469 !important;
+          transform: scale(1.07);
+        }
       }
     }
   }
