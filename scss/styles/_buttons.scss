@@ -15,10 +15,47 @@
       background-color: rgba(#fff, 0.1) !important;
       transform: scale(1.07);
     }
+  }
 
+  &-portfolio {
+    position: relative;
+    padding: 12.5px 22.5px;
+    
     &:hover {
-      background-color: rgba(#fff, 0.1) !important;
-      transform: scale(1.07);
+      background-color: $brandPink !important;
+      color: #fff;
+    }
+
+    &:focus {     
+      background-color: $brandPink !important;
+      color: #fff;  
+    }
+
+    &-active:active {
+      background-color: $brandPink !important;
+      color: #fff;  
+    }
+
+    span {
+      position: absolute;
+      bottom: -15px;
+      left:0;
+      right:0;
+      margin-left:auto;
+      margin-right:auto;
+      width: 0; 
+      height: 0; 
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-top: 15px solid $medPurple;
+    }
+
+    &:focus > span {     
+      border-top: 15px solid $brandPink;
+    }
+
+    &:hover > span {
+      border-top: 15px solid $brandPink;
     }
   }
 
@@ -44,31 +81,6 @@
       left: 50%;
       height: 50%;
       transform: translate(-50%, -50%);
-    }
-  }
-
-  &-portfolio {
-    position: relative;
-    padding: 12.5px 22.5px;
-
-    span {
-      position: absolute;
-      bottom: -15px;
-      left:0;
-      right:0;
-      margin-left:auto;
-      margin-right:auto;
-      width: 0; 
-      height: 0; 
-      border-left: 15px solid transparent;
-      border-right: 15px solid transparent;
-      
-      border-top: 15px solid $medPurple;
-
-      &:hover {
-        border-top: 15px solid $brandPink;
-        transform: scale(1.07);
-      }
     }
   }
 }

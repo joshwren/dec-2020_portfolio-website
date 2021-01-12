@@ -199,9 +199,34 @@ section {
   .btn-secondary:hover {
     background-color: rgba(255, 255, 255, 0.1) !important;
     transform: scale(1.07); }
-  .btn-secondary:hover {
-    background-color: rgba(255, 255, 255, 0.1) !important;
-    transform: scale(1.07); }
+  .btn-portfolio {
+    position: relative;
+    padding: 12.5px 22.5px; }
+    .btn-portfolio:hover {
+      background-color: #fc4e55 !important;
+      color: #fff; }
+    .btn-portfolio:focus {
+      background-color: #fc4e55 !important;
+      color: #fff; }
+    .btn-portfolio-active:active {
+      background-color: #fc4e55 !important;
+      color: #fff; }
+    .btn-portfolio span {
+      position: absolute;
+      bottom: -15px;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      width: 0;
+      height: 0;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-top: 15px solid #2b2342; }
+    .btn-portfolio:focus > span {
+      border-top: 15px solid #fc4e55; }
+    .btn-portfolio:hover > span {
+      border-top: 15px solid #fc4e55; }
   .btn-rectangle {
     font-size: 0.8125rem !important;
     color: #fff;
@@ -221,24 +246,6 @@ section {
       left: 50%;
       height: 50%;
       transform: translate(-50%, -50%); }
-  .btn-portfolio {
-    position: relative;
-    padding: 12.5px 22.5px; }
-    .btn-portfolio span {
-      position: absolute;
-      bottom: -15px;
-      left: 0;
-      right: 0;
-      margin-left: auto;
-      margin-right: auto;
-      width: 0;
-      height: 0;
-      border-left: 15px solid transparent;
-      border-right: 15px solid transparent;
-      border-top: 15px solid #2b2342; }
-      .btn-portfolio span:hover {
-        border-top: 15px solid #fc4e55;
-        transform: scale(1.07); }
 
 a {
   text-decoration: none; }
