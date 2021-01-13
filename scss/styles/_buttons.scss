@@ -31,10 +31,15 @@
       color: #fff;  
     }
 
-    &-active:active {
+    /*&-active {
       background-color: $brandPink !important;
       color: #fff;  
     }
+
+     &:not(.collapsed-accordion) {
+      background-color: $brandPink !important;
+      color: #fff; 
+    }*/
 
     span {
       position: absolute;

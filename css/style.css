@@ -201,14 +201,20 @@ section {
     transform: scale(1.07); }
   .btn-portfolio {
     position: relative;
-    padding: 12.5px 22.5px; }
+    padding: 12.5px 22.5px;
+    /*&-active {
+      background-color: $brandPink !important;
+      color: #fff;  
+    }
+
+     &:not(.collapsed-accordion) {
+      background-color: $brandPink !important;
+      color: #fff; 
+    }*/ }
     .btn-portfolio:hover {
       background-color: #fc4e55 !important;
       color: #fff; }
     .btn-portfolio:focus {
-      background-color: #fc4e55 !important;
-      color: #fff; }
-    .btn-portfolio-active:active {
       background-color: #fc4e55 !important;
       color: #fff; }
     .btn-portfolio span {
