@@ -542,17 +542,17 @@ a {
   object-fit: cover; }
   @media (min-width: 576px) {
     #gallery img {
-      height: 35vw; } }
+      height: auto; } }
   @media (min-width: 992px) {
     #gallery img {
-      height: 18vw; } }
+      height: auto; } }
 
 .carousel-item img {
   height: 60vw;
   object-fit: cover; }
   @media (min-width: 576px) {
     .carousel-item img {
-      height: 350px; } }
+      height: auto; } }
 
 * {
   transition: 0.3s; }
@@ -687,3 +687,7 @@ a {
       position: absolute;
       bottom: 0;
       right: 0; }
+
+.card {
+  border-width: 0 !important;
+  box-shadow: none !important; }
