@@ -1,0 +1,76 @@
+.highlights {
+  padding: 70px 0;
+
+  &__card {
+    position: relative;
+    border: 2px solid $brandPink !important;
+    border-radius: 10px !important;
+    padding: 25px 15px 13px 15px;
+
+    &--3 {
+      margin-top: 40px;
+
+      @include respond-to("lg") {
+      margin-top: 0px;
+      }
+    }
+
+    &--4 {
+      margin-top: 40px;
+
+      @include respond-to("lg") {
+      margin-top: 0px;
+      }
+    }
+
+    &--cert {
+
+      h1 {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+      }
+    
+      h2 {
+        font-size: 1rem;
+        line-height: 1.3rem;
+        color: $brandPink;
+      }
+    
+      p {
+        margin-top: 7px;
+      }
+  
+    }
+
+    &--icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 50px;
+      width: 50px;
+      border-radius: 100%;
+      text-align: center;
+
+      position: absolute;
+      top: -26px;
+
+      img {
+        transform: scale(1.2);
+      }
+
+      &--cursorPointer {
+        cursor: pointer;
+
+        &:hover {
+          background-color: #f86469 !important;
+          transform: scale(1.07);
+        }
+      }
+    }
+  }
+
+  p {
+    line-height: 1.5rem;
+    font-weight: 500;
+  }
+}

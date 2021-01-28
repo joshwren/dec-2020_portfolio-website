@@ -1,0 +1,49 @@
+.portfolio {
+  padding: 70px 0;
+
+  h1 {
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    margin-bottom: 5px;
+  }
+
+  .card {
+    border-width:0 !important;
+    box-shadow:none !important;
+  }
+
+  &__header {
+
+    &--buttons {
+      position: relative;
+
+      height: 75px;
+      text-align: center;
+
+      @include respond-to("md") {
+        height: auto;
+      }
+
+      &--group {
+        position: absolute;
+        bottom: 0;
+        left:0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+
+        @include respond-to("md") {
+          position: absolute;
+          bottom: 0;
+          left: auto;
+          right: 0;
+          margin-left: auto;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+

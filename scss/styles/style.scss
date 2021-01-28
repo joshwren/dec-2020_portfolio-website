@@ -1,9 +1,14 @@
-@import "global";
 @import "variables";
 @import "mixins";
 @import "breakpoints";
+@import "global";
 
 @import "navbar";
 @import "buttons";
 
 @import "hero";
+@import "highlights";
+@import "about";
+@import "skills";
+@import "lightbox";
+@import "portfolio";
