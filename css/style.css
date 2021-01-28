@@ -341,6 +341,10 @@ a {
       @media (min-width: 992px) {
         .highlights__card--4 {
           margin-top: 0px; } }
+    .highlights__card--contentBottom {
+      position: absolute;
+      bottom: 27px;
+      left: 30px; }
     .highlights__card--cert h1 {
       font-size: 1.25rem;
       line-height: 1.75rem; }
@@ -350,6 +354,37 @@ a {
       color: #fc4e55; }
     .highlights__card--cert p {
       margin-top: 7px; }
+    .highlights__card--review h2 {
+      font-size: 0.9rem;
+      line-height: 1.3rem;
+      color: #fc4e55;
+      margin-top: 10px; }
+    .highlights__card--review h3 {
+      font-size: 0.9rem;
+      font-weight: 400;
+      line-height: 1.3rem;
+      color: #fff;
+      margin-top: 2px; }
+    .highlights__card--review p {
+      font-size: 0.8rem;
+      line-height: 1.5rem;
+      margin-top: 25px; }
+    .highlights__card--review span {
+      font-size: 1.5rem;
+      vertical-align: bottom;
+      display: inline-block;
+      line-height: 1.5rem;
+      color: #fc4e55; }
+    .highlights__card--review--2 {
+      margin-top: 60px; }
+      @media (min-width: 992px) {
+        .highlights__card--review--2 {
+          margin-top: 0px; } }
+    .highlights__card--review--3 {
+      margin-top: 60px; }
+      @media (min-width: 992px) {
+        .highlights__card--review--3 {
+          margin-top: 0px; } }
     .highlights__card--icon {
       display: flex;
       align-items: center;
@@ -367,6 +402,16 @@ a {
         .highlights__card--icon--cursorPointer:hover {
           background-color: #f86469 !important;
           transform: scale(1.07); }
+    .highlights__card--profile {
+      height: 90px;
+      width: 90px;
+      border-radius: 100%;
+      overflow: hidden;
+      border: #fc4e55 solid 2px;
+      position: absolute;
+      top: -46px; }
+      .highlights__card--profile img {
+        width: 100%; }
   .highlights p {
     line-height: 1.5rem;
     font-weight: 500; }
