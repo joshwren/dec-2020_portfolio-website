@@ -1,0 +1,49 @@
+.contact {
+  padding: 70px 0 80px 0;
+
+  .form-control {
+    background-color: $medPurple;
+    color:    #FFF;
+    font-size: .9rem;
+    border: 2px solid #fff;
+    border-radius: 10px;
+  }
+
+  ::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #FFF;
+    font-size: .9rem;
+  }
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #FFF;
+    font-size: .9rem;
+  }
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #FFF;
+    font-size: .9rem;
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #FFF;
+    font-size: .9rem;
+  }
+
+  textarea:focus,
+  input[type="text"]:focus,
+  input[type="password"]:focus,
+  input[type="datetime"]:focus,
+  input[type="datetime-local"]:focus,
+  input[type="date"]:focus,
+  input[type="month"]:focus,
+  input[type="time"]:focus,
+  input[type="week"]:focus,
+  input[type="number"]:focus,
+  input[type="email"]:focus,
+  input[type="url"]:focus,
+  input[type="search"]:focus,
+  input[type="tel"]:focus,
+  input[type="color"]:focus,
+  .uneditable-input:focus {   
+    border-color: $brandPink;
+    box-shadow: 0 1px 1px rgba($brandPink, 0.075) inset, 0 0 8px rgba($brandPink, 0.6);
+    outline: 0 none;
+  }
+}

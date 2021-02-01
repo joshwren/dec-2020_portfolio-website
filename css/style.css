@@ -124,7 +124,7 @@ h3 {
   color: #fff; }
 
 p {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   line-height: 1.4rem;
   font-weight: 400;
   color: #fff; }
@@ -234,7 +234,7 @@ section {
     .btn-portfolio:hover > span {
       border-top: 15px solid #fc4e55; }
   .btn-rectangle {
-    font-size: 0.8125rem !important;
+    font-size: 0.85rem !important;
     color: #fff;
     font-weight: 500;
     white-space: nowrap; }
@@ -325,7 +325,7 @@ a {
           float: right; } }
 
 .highlights {
-  padding: 70px 0; }
+  padding: 70px 0 80px 0; }
   .highlights__card {
     position: relative;
     border: 2px solid #fc4e55 !important;
@@ -366,7 +366,7 @@ a {
       color: #fff;
       margin-top: 2px; }
     .highlights__card--review p {
-      font-size: 0.8rem;
+      font-size: 0.85rem;
       line-height: 1.5rem;
       margin-top: 25px; }
     .highlights__card--review span {
@@ -751,3 +751,47 @@ a {
           right: 0;
           margin-left: auto;
           margin-right: 0; } }
+
+.contact {
+  padding: 70px 0 80px 0; }
+  .contact .form-control {
+    background-color: #2b2342;
+    color: #FFF;
+    font-size: .9rem;
+    border: 2px solid #fff;
+    border-radius: 10px; }
+  .contact ::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #FFF;
+    font-size: .9rem; }
+  .contact :-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #FFF;
+    font-size: .9rem; }
+  .contact ::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #FFF;
+    font-size: .9rem; }
+  .contact :-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #FFF;
+    font-size: .9rem; }
+  .contact textarea:focus,
+  .contact input[type="text"]:focus,
+  .contact input[type="password"]:focus,
+  .contact input[type="datetime"]:focus,
+  .contact input[type="datetime-local"]:focus,
+  .contact input[type="date"]:focus,
+  .contact input[type="month"]:focus,
+  .contact input[type="time"]:focus,
+  .contact input[type="week"]:focus,
+  .contact input[type="number"]:focus,
+  .contact input[type="email"]:focus,
+  .contact input[type="url"]:focus,
+  .contact input[type="search"]:focus,
+  .contact input[type="tel"]:focus,
+  .contact input[type="color"]:focus,
+  .contact .uneditable-input:focus {
+    border-color: #fc4e55;
+    box-shadow: 0 1px 1px rgba(252, 78, 85, 0.075) inset, 0 0 8px rgba(252, 78, 85, 0.6);
+    outline: 0 none; }
