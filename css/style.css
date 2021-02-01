@@ -107,19 +107,19 @@ body {
   overflow-x: hidden; }
 
 h1 {
-  font-size: 1.75rem;
-  line-height: 2.25rem;
+  font-size: 2rem;
+  line-height: 2.5rem;
   font-weight: 500;
   color: #fff; }
 
 h2 {
-  font-size: 1.375rem;
+  font-size: 1.4rem;
   line-height: 1.5rem;
   font-weight: 500;
   color: #fff; }
 
 h3 {
-  font-size: 0.9375rem;
+  font-size: 1rem;
   font-weight: 500;
   color: #fff; }
 
@@ -325,7 +325,7 @@ a {
           float: right; } }
 
 .highlights {
-  padding: 70px 0 80px 0; }
+  padding: 70px 0 75px 0; }
   .highlights__card {
     position: relative;
     border: 2px solid #fc4e55 !important;
@@ -721,7 +721,7 @@ a {
       background: white; }
 
 .portfolio {
-  padding: 70px 0; }
+  padding: 70px 0 75px 0; }
   .portfolio h1 {
     margin-bottom: 10px; }
   .portfolio h3 {
@@ -753,7 +753,9 @@ a {
           margin-right: 0; } }
 
 .contact {
-  padding: 70px 0 80px 0; }
+  padding: 70px 0 75px 0; }
+  .contact__header {
+    padding-bottom: 40px; }
   .contact .form-control {
     background-color: #2b2342;
     color: #FFF;
@@ -795,3 +797,34 @@ a {
     border-color: #fc4e55;
     box-shadow: 0 1px 1px rgba(252, 78, 85, 0.075) inset, 0 0 8px rgba(252, 78, 85, 0.6);
     outline: 0 none; }
+  .contact__messageField {
+    padding-top: 15px; }
+  .contact__image {
+    background-image: url(/img/Images/Phone-light-pink-hi-dpi.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 250px;
+    border-radius: 10px; }
+    @media (min-width: 768px) {
+      .contact__image {
+        background-image: url(/img/Images/Phone-light-pink-hi-dpi.jpg);
+        height: 250px; } }
+    @media (min-width: 992px) {
+      .contact__image {
+        background-image: url(/img/Images/Phone-light-pink-hi-dpi.jpg);
+        height: auto; } }
+
+.footer {
+  display: flex;
+  position: relative;
+  width: 100%;
+  background: #1d1830 url(/img/Images/Footer-background.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center bottom;
+  padding: 70px 0 15px 0; }
+  .footer__callOut {
+    width: 350px;
+    height: 350px;
+    border: 2.5px dashed #fff;
+    border-radius: 100%; }

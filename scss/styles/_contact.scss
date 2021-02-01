@@ -1,5 +1,9 @@
 .contact {
-  padding: 70px 0 80px 0;
+  padding: 70px 0 75px 0;
+
+  &__header {
+    padding-bottom: 40px;
+  }
 
   .form-control {
     background-color: $medPurple;
@@ -45,5 +49,27 @@
     border-color: $brandPink;
     box-shadow: 0 1px 1px rgba($brandPink, 0.075) inset, 0 0 8px rgba($brandPink, 0.6);
     outline: 0 none;
+  }
+
+  &__messageField {
+    padding-top: 15px;
+  }
+
+  &__image {
+    background-image: url(/img/Images/Phone-light-pink-hi-dpi.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 250px;
+    border-radius: 10px;
+
+    @include respond-to("md") {
+      background-image: url(/img/Images/Phone-light-pink-hi-dpi.jpg);
+      height: 250px;
+    }
+
+    @include respond-to("lg") {
+      background-image: url(/img/Images/Phone-light-pink-hi-dpi.jpg);
+      height: auto;
+    }
   }
 }

@@ -1,0 +1,17 @@
+.footer {
+  display: flex;
+  position: relative;
+  width: 100%;
+  background: $darkPurple url(/img/Images/Footer-background.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center bottom;
+  padding: 70px 0 15px 0;
+
+  &__callOut {
+    width: 350px;
+    height: 350px;
+    border: 2.5px dashed #fff;
+    border-radius: 100%;
+  }
+}
