@@ -238,7 +238,7 @@ section {
     .btn-portfolio:hover > span {
       border-top: 15px solid #fc4e55; }
   .btn-rectangle {
-    font-size: 1rem !important;
+    font-size: .9rem !important;
     color: #fff;
     font-weight: 500;
     white-space: nowrap; }
