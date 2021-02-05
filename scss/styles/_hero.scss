@@ -9,18 +9,18 @@
   background-position: center bottom;
 
   h1 {
-    font-size: 3.1875rem;
+    font-size: 3.25rem;
     font-weight: 400;
     margin-bottom: 12.5px;
   }
 
   h2 {
-    font-size: 1.1rem;
+    font-size: 1.25rem;
     margin-bottom: 17.5px;
   }
 
   h3 {
-    font-size: 0.95rem;
+    font-size: 1rem;
   }
 
   &__text {
@@ -72,12 +72,14 @@
     text-align: center;
 
     @include respond-to("md") {
-      padding-top: 150px;
+      padding-top: 115px;
       padding-left: 0;
       order: 2;
       text-align: center;
 
       img {
+        width: 350px;
+        height: 350px;
         float: right;
       }
     }

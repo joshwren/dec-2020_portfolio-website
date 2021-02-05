@@ -9,9 +9,54 @@
   padding: 70px 0 15px 0;
 
   &__callOut {
-    width: 350px;
-    height: 350px;
+    width: 320px;
+    height: 320px;
     border: 2.5px dashed #fff;
     border-radius: 100%;
+
+    a {
+      text-decoration: none;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      font-weight: 400;
+    }
+
+    button {
+      margin-right: 5px;
+    }
+  }
+
+  &__accent {
+    position: absolute;
+    bottom: 50px;
+    left: 5%;
+
+    @include respond-to("sm") {
+      bottom: 75px;
+      left: 10%;
+    }
+
+    @include respond-to("md") {
+      bottom: 75px;
+      left: 15%;
+    }
+  
+    @include respond-to("lg") {
+      bottom: 75px;
+      left: 20%;
+    }
+
+    img {
+      width: 125px;
+
+      @include respond-to("md") {
+        width: 150px;
+      }
+    }
   }
 }

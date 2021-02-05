@@ -10,3 +10,8 @@
     transform: scale(1.1);
   }
 }
+// OVERRIDE for nav hover and active
+.navbar ul.navbar-nav li.nav-item a:hover,
+.navbar ul.navbar-nav li.nav-item.active a {
+  color: $brandPink;
+}

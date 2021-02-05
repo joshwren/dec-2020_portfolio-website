@@ -107,25 +107,25 @@ body {
   overflow-x: hidden; }
 
 h1 {
-  font-size: 2rem;
+  font-size: 2.25rem;
   line-height: 2.5rem;
   font-weight: 500;
   color: #fff; }
 
 h2 {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   line-height: 1.5rem;
   font-weight: 500;
   color: #fff; }
 
 h3 {
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 500;
   color: #fff; }
 
 p {
-  font-size: 0.85rem;
-  line-height: 1.4rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   font-weight: 400;
   color: #fff; }
 
@@ -191,6 +191,10 @@ section {
   .navbar-brand img:hover {
     transform: scale(1.1); }
 
+.navbar ul.navbar-nav li.nav-item a:hover,
+.navbar ul.navbar-nav li.nav-item.active a {
+  color: #fc4e55; }
+
 .btn {
   transition: all .2s ease-in-out; }
   .btn-success:hover {
@@ -234,15 +238,15 @@ section {
     .btn-portfolio:hover > span {
       border-top: 15px solid #fc4e55; }
   .btn-rectangle {
-    font-size: 0.85rem !important;
+    font-size: 1rem !important;
     color: #fff;
     font-weight: 500;
     white-space: nowrap; }
   .btn-socials {
     position: relative;
-    width: 30px;
-    height: 30px;
-    font-size: 1rem !important;
+    width: 35px;
+    height: 35px;
+    font-size: 1.25rem !important;
     color: #fff;
     font-weight: 500;
     white-space: nowrap; }
@@ -277,14 +281,14 @@ a {
     }
   }*/ }
   .hero h1 {
-    font-size: 3.1875rem;
+    font-size: 3.25rem;
     font-weight: 400;
     margin-bottom: 12.5px; }
   .hero h2 {
-    font-size: 1.1rem;
+    font-size: 1.25rem;
     margin-bottom: 17.5px; }
   .hero h3 {
-    font-size: 0.95rem; }
+    font-size: 1rem; }
   .hero__text {
     height: 100%;
     order: 2;
@@ -317,11 +321,13 @@ a {
     text-align: center; }
     @media (min-width: 768px) {
       .hero__logo {
-        padding-top: 150px;
+        padding-top: 115px;
         padding-left: 0;
         order: 2;
         text-align: center; }
         .hero__logo img {
+          width: 350px;
+          height: 350px;
           float: right; } }
 
 .highlights {
@@ -355,18 +361,18 @@ a {
     .highlights__card--cert p {
       margin-top: 7px; }
     .highlights__card--review h2 {
-      font-size: 0.9rem;
+      font-size: 1rem;
       line-height: 1.3rem;
       color: #fc4e55;
       margin-top: 10px; }
     .highlights__card--review h3 {
-      font-size: 0.9rem;
+      font-size: 1rem;
       font-weight: 400;
       line-height: 1.3rem;
       color: #fff;
       margin-top: 2px; }
     .highlights__card--review p {
-      font-size: 0.85rem;
+      font-size: 1rem;
       line-height: 1.5rem;
       margin-top: 25px; }
     .highlights__card--review span {
@@ -531,11 +537,12 @@ a {
     margin: 13px 0;
     padding: 9px 15px; }
     .skills__card h1 {
-      font-size: 1.25rem;
-      line-height: 1.75rem; }
+      font-size: 1.5rem;
+      line-height: 1.75rem;
+      margin-bottom: 5px; }
     .skills__card h2 {
-      font-size: 1rem;
-      line-height: 1.3rem;
+      font-size: 1.15rem;
+      line-height: 1.5rem;
       color: #fc4e55; }
     .skills__card p {
       margin-top: 5px; }
@@ -558,7 +565,7 @@ a {
       list-style: none;
       color: #fff; }
       .skills__card ul li {
-        font-size: 1rem;
+        font-size: 1.15rem;
         line-height: 2rem;
         float: left;
         width: 50%; }
@@ -824,7 +831,36 @@ a {
   background-position: center bottom;
   padding: 70px 0 15px 0; }
   .footer__callOut {
-    width: 350px;
-    height: 350px;
+    width: 320px;
+    height: 320px;
     border: 2.5px dashed #fff;
     border-radius: 100%; }
+    .footer__callOut a {
+      text-decoration: none; }
+    .footer__callOut h1 {
+      margin-bottom: 10px; }
+    .footer__callOut h3 {
+      font-weight: 400; }
+    .footer__callOut button {
+      margin-right: 5px; }
+  .footer__accent {
+    position: absolute;
+    bottom: 50px;
+    left: 5%; }
+    @media (min-width: 576px) {
+      .footer__accent {
+        bottom: 75px;
+        left: 10%; } }
+    @media (min-width: 768px) {
+      .footer__accent {
+        bottom: 75px;
+        left: 15%; } }
+    @media (min-width: 992px) {
+      .footer__accent {
+        bottom: 75px;
+        left: 20%; } }
+    .footer__accent img {
+      width: 125px; }
+      @media (min-width: 768px) {
+        .footer__accent img {
+          width: 150px; } }
