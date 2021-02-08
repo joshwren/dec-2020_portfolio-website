@@ -864,3 +864,58 @@ a {
       @media (min-width: 768px) {
         .footer__accent img {
           width: 150px; } }
+
+.messageSent {
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0; }
+  .messageSent__close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 2rem;
+    color: var(--mainBlue);
+    transform: scaleX(1.2);
+    transform-origin: 100% 0;
+    cursor: pointer; }
+  .messageSent__large-hero {
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+    overflow: hidden; }
+    .messageSent__large-hero--banner {
+      z-index: -1;
+      position: absolute;
+      display: block;
+      /* Position the image in the middle of its container. */
+      top: -9999px;
+      right: -9999px;
+      bottom: -9999px;
+      left: -9999px;
+      margin: auto;
+      /* The following values determine the exact image behaviour. */
+      /* You can simulate background-size: cover/contain/etc.
+          by changing between min/max/standard width/height values.
+          These values simulate background-size: cover
+      */
+      min-width: 100%;
+      min-height: 100%; }
+    .messageSent__large-hero--icon img {
+      width: 100px !important;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      animation-name: spinAndGrow;
+      animation-duration: 2s;
+      animation-timing-function: ease-out; }
+@keyframes spinAndGrow {
+  0% {
+    transform: rotate(0deg); }
+  80% {
+    transform: rotate(360deg); }
+  100% {
+    transform: scale(1.25); } }

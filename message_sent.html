@@ -1,0 +1,125 @@
+<!-- ! tab creates a new boiler plate -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <!-- Tab icon image link -->
+  <link rel="shortcut icon" type="image/png" href="img/Logo/DBJW_logo.svg" />
+
+  <!-- FontAwesome style links https://fontawesome.com/how-to-use/on-the-web/setup/hosting-font-awesome-yourself -->
+  <link href="assets/fontawesome-free-5.12.0-web/css/all.css" rel="stylesheet" />
+
+  <!-- Google font Roboto -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+
+  <!-- Slick Slider styles file -->
+  <link rel="stylesheet" type="text/css" href="assets/slick-1.8.1/slick/slick.css" />
+  <!-- Add the new slick-theme.css if you want the default styling -->
+  <link rel="stylesheet" type="text/css" href="assets/slick-1.8.1/slick/slick-theme.css" />
+
+  <!-- Ekko Lightbox style links https://cdnjs.com/libraries/ekko-lightbox -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
+    integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ=="
+    crossorigin="anonymous" />
+
+  <!-- Bootstrap SASS compiled CSS styles file -->
+  <link rel="stylesheet" href="css/bootstrap.css" />
+
+  <!-- Custom styles SASS compiled CSS styles file -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Add Bootstrap links https://getbootstrap.com/docs/4.4/getting-started/introduction/ -->
+  <title>DBJW Webfolio</title>
+</head>
+
+<body id="home" data-spy="scroll" data-target=".navbar" data-offset="50">
+  <!-- CONTENT START HERE -->
+  <section class="messageSent bg-primary">
+    <div class="row">
+      <div class="messageSent__large-hero">
+        <img src="img/Icons/message-sent.svg" class="messageSent__large-hero--icon">
+
+        <picture class="messageSent__large-hero--banner">
+          <source srcset="
+          img/Images/celebration_banner.jpg 1920w, 
+          img/images/celebration_banner.jpg 3840w" media="(min-width: 1380px)"> <!-- Large screen sizes -->
+          <source srcset="
+          img/images/celebration_banner.jpg 1380w, 
+          img/images/celebration_banner.jpg 2760w" media="(min-width: 990px)"> <!-- Medium screen sizes -->
+          <source srcset="
+          img/images/celebration_banner.jpg 990w, 
+          img/images/celebration_banner.jpg 1980w" media="(min-width: 640px)"> <!-- Small screen sizes -->
+          <img srcset="
+          img/images/celebration_banner.jpg 640w, 
+          img/images/celebration_banner.jpg 1280w" alt="" class="message-sent__banner-image">
+          <!-- Smallest screen sizes -->
+        </picture>
+        <a href="index.html">
+          <div class="message-sent__close">X</div>
+        </a>
+      </div>
+    </div>
+    <!-- TEXT START -->
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <h3>Success<span class="pink-accent">!</span></h3>
+          <h1 class="mb-4">Message Sent</h1>
+          <p>Your message has been successfully sent.</p>
+          <hr>
+          <p>Thank you for contacting me. I will be in touch with you very soon.</p>
+
+          <a href="index.html">
+            <button class="btn btn-success btn-rectangle btn-inline-block py-2 px-3">
+              <span>&#8604;</span>Take me back
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- CONTENT END HERE -->
+
+  <!-- END HERE -->
+
+  <!-- Jquery JS (best to use the MINIFIED version) http://code.jquery.com/ -->
+  <script src="http://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap JS (best to not use the SLIM version as it will not include some effects) https://getbootstrap.com/docs/4.4/getting-started/introduction/ -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <!-- Ekko Lightbox JS (best to use the MINIFIED version) https://cdnjs.com/libraries/ekko-lightbox -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"
+    integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g=="
+    crossorigin="anonymous"></script>
+
+  <script src="/js/lightbox.js"></script>
+
+  <!--Slick Slider JS https://kenwheeler.github.io/slick/ -->
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="assets/slick-1.8.1/slick/slick.min.js"></script>
+
+  <!-- Your custom JS -->
+  <script>
+
+  </script>
+</body>
+
+</html>

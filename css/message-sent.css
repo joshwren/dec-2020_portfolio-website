@@ -1,0 +1,176 @@
+/* GLOBAL styles */
+html {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+* { /* Selects every element on the page */
+  box-sizing: border-box; /* Browser will still honor the column percentage */
+}
+
+:root {
+  --mainBlue: #2f5572;
+  --mainOrange: #d59541;
+  --logoBlue: #315064;
+  --logoOrange: #F4BA67;
+}
+
+h2 {
+  font-size: 2.55rem;
+  font-weight: 300;
+  color: var(--mainBlue);
+}
+
+h2 span {
+  color: var(--mainOrange);
+}
+
+/* GENERAL styles */
+
+.message-sent {
+  width: 100%;
+  height: 100vh;
+}
+
+.message-sent__close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 2rem;
+  color: var(--mainBlue);
+  transform: scaleX(1.2);
+  transform-origin: 100% 0;
+  cursor: pointer;
+}
+
+.message-sent__close:hover {
+  color: var(--mainOrange);
+}
+
+.message-sent__large-hero {
+  position: relative;
+  width: 100%;
+  min-height: 300px;
+  overflow: hidden;
+}
+
+.message-sent__banner-image {
+  z-index: -1;
+        position: absolute;
+        display: block;
+        /* Position the image in the middle of its container. */
+        top: -9999px;
+        right: -9999px;
+        bottom: -9999px;
+        left: -9999px;
+        margin: auto;
+        /* The following values determine the exact image behaviour. */
+        /* You can simulate background-size: cover/contain/etc.
+            by changing between min/max/standard width/height values.
+            These values simulate background-size: cover
+        */
+        min-width: 100%;
+        min-height: 100%;
+     }
+
+.message-sent__icon {
+  width: 100px !important;
+  position: absolute;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  margin:auto;
+
+  animation-name: spinAndGrow;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes spinAndGrow {
+  0% {
+    transform: rotate(0deg) }
+  80% {
+    transform: rotate(360deg) }
+  100% {
+    transform: scale(1.25); } 
+}
+
+.message-sent__content {
+  width: 80%;
+  text-align: center;
+  position:absolute;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+/* BUTTON styles */
+.btn__back {
+  height: 50px;
+  background-color: var(--mainBlue);
+  color: #fff;
+  padding: 0 20px;
+  text-decoration: none;
+  line-height: .9rem;
+  margin-top: 2rem;
+  cursor: pointer;
+
+
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.btn__back:hover {
+  background-color: var(--mainOrange);
+}
+
+.btn__back span {
+  font-size: 2rem;
+  line-height: .75rem;
+  margin-right: .3rem;
+  display: block;
+  float:left;
+}
+
+/* MEDIA QUEREY styles */
+
+/* small screens */
+@media (min-width: 530px) {
+
+}
+
+/* medium screens */
+@media (min-width: 800px) {
+  h2 {
+    font-size: 3.75rem;
+  }
+
+  .message-sent__large-hero {
+    min-height: 500px;
+  }
+
+  .message-sent__icon {
+    width: 140px !important;
+  }
+
+  .message-sent__content {
+    width: 50%;
+  }
+}
+
+

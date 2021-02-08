@@ -803,32 +803,39 @@
         <div class="col-lg-8 order-2 order-lg-1">
           <div class="card bg-secondary">
             <div class="card-body p-0">
-              <div class="row">
-                <div class="col-md-6 mb-3">
-                  <div class="form-group">
-                    <input type="text" class="form-control" style="height: 55px;" placeholder="First Name">
+              <form name="contactform" method="post" action="message_sent.php">
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <div class="form-group">
+                      <input type="text" name="firstname" id="firstname" class="form-control" style="height: 55px;"
+                        placeholder="First Name">
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="form-group">
+                      <input type="text" name="lastname" id="lastname" class="form-control" style="height: 55px;"
+                        placeholder="Last Name">
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="form-group">
+                      <input type="email" name="email" id="email" class="form-control" style="height: 55px;"
+                        placeholder="Email">
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="form-group">
+                      <input type="tel" name="telephone" id="number" class="form-control" style="height: 55px;"
+                        placeholder="Phone Number">
+                    </div>
                   </div>
                 </div>
-                <div class="col-md-6 mb-3">
-                  <div class="form-group">
-                    <input type="text" class="form-control" style="height: 55px;" placeholder="Last Name">
-                  </div>
-                </div>
-                <div class="col-md-6 mb-3">
-                  <div class="form-group">
-                    <input type="text" class="form-control" style="height: 55px;" placeholder="Email">
-                  </div>
-                </div>
-                <div class="col-md-6 mb-3">
-                  <div class="form-group">
-                    <input type="text" class="form-control" style="height: 55px;" placeholder="Phone Number">
-                  </div>
-                </div>
-              </div>
+              </form>
               <div class="row">
                 <div class="col-md-12 mb-4">
                   <div class="form-group">
-                    <textarea class="form-control contact__messageField" placeholder="Message" rows="5"></textarea>
+                    <textarea name="comments" id="comments" class="form-control contact__messageField"
+                      placeholder="Message" rows="5"></textarea>
                   </div>
                 </div>
                 <div class="col-md-12">
