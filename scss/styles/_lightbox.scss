@@ -52,10 +52,19 @@ $bootstrap-xl: 1200px;
 
 #gallery{
   padding: 0 15px;
+
+  p {
+    font-size: .85rem;
+    line-height: 1.2rem;
+    margin: 10px 0 25px 0;
+  }
+
+  span {
+    color: $brandPink;
+  }
   
   img {
     display: block;
-    margin: 15px 0;
     border-radius: 10px 10px 10px 10px;
     cursor: pointer;
     
