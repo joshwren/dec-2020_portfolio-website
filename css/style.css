@@ -741,6 +741,9 @@ a {
   .portfolio .card {
     border-width: 0 !important;
     box-shadow: none !important; }
+  .portfolio a :hover {
+    color: #ff9599;
+    transform: scale(1.05); }
   .portfolio__header--buttons {
     position: relative;
     height: 75px;
