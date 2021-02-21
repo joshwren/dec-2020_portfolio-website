@@ -106,6 +106,9 @@ section {
 body {
   overflow-x: hidden; }
 
+a {
+  text-decoration: none; }
+
 h1 {
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -126,7 +129,7 @@ h3 {
 p {
   font-size: 1rem;
   line-height: 1.5rem;
-  font-weight: 400;
+  font-weight: 300;
   color: #fff; }
 
 .pink-accent {
@@ -195,6 +198,12 @@ section {
 .navbar ul.navbar-nav li.nav-item.active a {
   color: #fc4e55; }
 
+.navbar-nav .btn {
+  margin: 0 auto; }
+  @media (min-width: 768px) {
+    .navbar-nav .btn {
+      margin: 0; } }
+
 .btn {
   transition: all .2s ease-in-out; }
   .btn-success:hover {
@@ -256,9 +265,6 @@ section {
       left: 50%;
       height: 50%;
       transform: translate(-50%, -50%); }
-
-a {
-  text-decoration: none; }
 
 .hero {
   display: flex;
@@ -332,6 +338,9 @@ a {
 
 .highlights {
   padding: 70px 0 75px 0; }
+  .highlights p {
+    line-height: 1.5rem;
+    font-weight: 500; }
   .highlights__card {
     position: relative;
     border: 2px solid #fc4e55 !important;
@@ -374,7 +383,9 @@ a {
     .highlights__card--review p {
       font-size: 1rem;
       line-height: 1.5rem;
-      margin-top: 25px; }
+      margin-top: 25px;
+      font-weight: 400;
+      font-style: italic; }
     .highlights__card--review span {
       font-size: 1.5rem;
       vertical-align: bottom;
@@ -418,9 +429,6 @@ a {
       top: -46px; }
       .highlights__card--profile img {
         width: 100%; }
-  .highlights p {
-    line-height: 1.5rem;
-    font-weight: 500; }
 
 .about .row {
   min-height: 720px; }
@@ -590,14 +598,7 @@ a {
           margin-left: -5px; }
 
 #gallery img {
-  height: 75vw;
   object-fit: cover; }
-  @media (min-width: 576px) {
-    #gallery img {
-      height: auto; } }
-  @media (min-width: 992px) {
-    #gallery img {
-      height: auto; } }
 
 .carousel-item img {
   height: 60vw;

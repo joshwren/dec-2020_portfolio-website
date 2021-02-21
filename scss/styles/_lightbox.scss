@@ -13,16 +13,7 @@ $bootstrap-xl: 1200px;
 #gallery {
   
   img {
-    height: 75vw;
     object-fit: cover;
-    
-    @media (min-width: $bootstrap-sm) {
-      height: auto;
-    }
-    
-    @media (min-width: $bootstrap-lg) {
-      height: auto;
-    }
   }
 }
 

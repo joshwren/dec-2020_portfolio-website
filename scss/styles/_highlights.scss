@@ -1,6 +1,11 @@
 .highlights {
   padding: 70px 0 75px 0;
 
+  p {
+    line-height: 1.5rem;
+    font-weight: 500;
+  }
+
   &__card {
     position: relative;
     border: 2px solid $brandPink !important;
@@ -69,6 +74,8 @@
         font-size: 1rem;
         line-height: 1.5rem;
         margin-top: 25px;
+        font-weight: 400;
+        font-style: italic;
       }
 
       span {
@@ -139,8 +146,5 @@
     }
   }
 
-  p {
-    line-height: 1.5rem;
-    font-weight: 500;
-  }
+  
 }
