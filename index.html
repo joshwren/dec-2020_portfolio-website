@@ -32,6 +32,9 @@
   <!-- Bootstrap SASS compiled CSS styles file -->
   <link rel="stylesheet" href="css/bootstrap.css" />
 
+  <!-- Jquery Scroll Reveal styles file -->
+  <link rel="stylesheet" href="css/easy-reveal.min.css">
+
   <!-- Custom styles SASS compiled CSS styles file -->
   <link rel="stylesheet" href="css/style.css" />
 
@@ -87,7 +90,7 @@
   <section class="hero" id="hero">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 hero__text">
+        <div class="col-md-6 hero__text" data-easy-reveal="fade-in-right">
           <div class="hero__text--intro">
             <h2>Hello World! I am</h2>
             <h1>Josh Wren</h1>
@@ -128,7 +131,7 @@
             </a>
           </div>
         </div>
-        <div class="col-md-6 hero__logo">
+        <div class="col-md-6 hero__logo" data-easy-reveal="fade-in-left">
           <img class="hero__img" src="/img/Logo/DBJW_hero_logo.svg" alt="" />
         </div>
       </div>
@@ -193,7 +196,7 @@
       <div class="row d-flex">
         <div class="col-md-6 order-2 order-md-1">
           <div class="about__content d-flex align-items-center">
-            <div class="about__content--text">
+            <div class="about__content--text" data-easy-reveal="fade-in-right">
               <h3>About Me<span class="pink-accent">....</span></h3>
               <h1 class="mb-4">Graphic Designer andWeb Developer</h1>
               <p class="mb-2">
@@ -223,7 +226,7 @@
         </div>
 
         <div class="col-md-6 order-1 order-md-2">
-          <div class="about__image">
+          <div class="about__image" data-easy-reveal="fade-in-left">
             <div class="about__image--backing">
               &nbsp
             </div>
@@ -245,14 +248,14 @@
   <!-- SKILLS SECTION STARTS -->
   <section class="skills bg-secondary" id="skills">
     <div class="container">
-      <div class="row text-center">
+      <div class="row text-center" data-easy-reveal="fade-in-down">
         <h3 class="mb-1">Qualifications<span class="pink-accent">....</span></h3>
         <h1 class="mb-4">Experience & Skills</h1>
       </div>
 
       <div class="row mt-4">
         <!-- First column -->
-        <div class="col-12 col-md-6 col-lg-4 d-flex flex-column">
+        <div class="col-12 col-md-6 col-lg-4 d-flex flex-column" data-easy-reveal="fade-in-right">
           <h2 class="skills__cardHeading mb-2">Qualifications<span class="pink-accent">....</span></h2>
 
           <div class="card skills__card bg-primary flex-fill">
@@ -289,7 +292,7 @@
           </div>
         </div>
         <!-- Second column -->
-        <div class="col-12 col-md-6 col-lg-4 d-flex flex-column">
+        <div class="col-12 col-md-6 col-lg-4 d-flex flex-column" data-easy-reveal="fade-in-up">
           <h2 class="skills__cardHeading mt-4 mt-md-0 mb-2">Experience<span class="pink-accent">....</span></h2>
 
           <div class="card skills__card skills__card--experience bg-primary flex-fill">
@@ -326,7 +329,7 @@
           </div>
         </div>
         <!-- Third column -->
-        <div class="col-12 col-lg-4 d-flex flex-column">
+        <div class="col-12 col-lg-4 d-flex flex-column" data-easy-reveal="fade-in-left">
           <h2 class="skills__cardHeading mt-4 mt-lg-0 mb-2">Skills<span class="pink-accent">....</span></h2>
           <div class="card bg-primary skills__card flex-fill">
             <div class="card-body reveal">
@@ -359,13 +362,13 @@
   <!-- SKILLS SECTION ENDS -->
   <!-- CERTIFICATES (HIGHLIGHTS) SECTION STARTS -->
   <section class="highlights bg-primary" id="highlights">
-    <div class="container">
+    <div class="container" data-easy-reveal="fade-in-up">
       <div class="row text-center mb-5">
         <h3 class="mb-1">Further learning<span class="pink-accent">....</span></h3>
         <h1 class="mb-4">Certificates</h1>
       </div>
       <div class="row highlights__row" data-toggle="modal" data-target="#certificateModal">
-        <div class="col-6 col-lg-3 d-flex">
+        <div class="col-6 col-lg-3 d-flex" data-easy-reveal="fade-in-rotate-x">
           <div class="card highlights__card highlights__card--cert border-success bg-primary flex-fill">
             <div class="card-body reveal">
               <div class="highlights__card--icon highlights__card--icon--cursorPointer bg-success">
@@ -385,7 +388,7 @@
           </div>
         </div>
 
-        <div class="col-6 col-lg-3 d-flex">
+        <div class="col-6 col-lg-3 d-flex" data-easy-reveal="fade-in-rotate-y">
           <div class="card highlights__card highlights__card--cert border-success bg-primary flex-fill">
             <div class="card-body">
               <div class="highlights__card--icon highlights__card--icon--cursorPointer bg-success">
@@ -404,7 +407,7 @@
           </div>
         </div>
 
-        <div class="col-6 col-lg-3 d-flex">
+        <div class="col-6 col-lg-3 d-flex" data-easy-reveal="fade-in-rotate-x">
           <div
             class="card highlights__card highlights__card--3 highlights__card--cert border-success bg-primary flex-fill">
             <div class="card-body">
@@ -424,7 +427,7 @@
           </div>
         </div>
 
-        <div class="col-6 col-lg-3 d-flex">
+        <div class="col-6 col-lg-3 d-flex" data-easy-reveal="fade-in-rotate-y">
           <div
             class="card highlights__card highlights__card--4 highlights__card--cert border-success bg-primary flex-fill">
             <div class="card-body">
@@ -1449,13 +1452,13 @@
   <!-- REVIEW SECTION STARTS -->
   <section class="highlights bg-primary" id="reviews">
     <div class="container">
-      <div class="row text-center mb-5">
+      <div class="row text-center mb-5" data-easy-reveal="fade-in-down">
         <h3 class="mb-1">A few<span class="pink-accent">....</span></h3>
         <h1 class="mb-4">Reviews</h1>
       </div>
 
       <div class="row highlights__row mt-5">
-        <div class="col-12 col-lg-4 d-flex">
+        <div class="col-12 col-lg-4 d-flex" data-easy-reveal="fade-in-right">
           <div class="card highlights__card highlights__card--review border-success bg-primary flex-fill">
             <div class="card-body">
               <div class="highlights__card--profile">
@@ -1474,7 +1477,7 @@
           </div>
         </div>
 
-        <div class="col-12 col-lg-4 d-flex">
+        <div class="col-12 col-lg-4 d-flex" data-easy-reveal="fade-in-up">
           <div
             class="card highlights__card highlights__card--review highlights__card--review--2 border-success bg-primary flex-fill">
             <div class="card-body">
@@ -1493,7 +1496,7 @@
           </div>
         </div>
 
-        <div class="col-12 col-lg-4 d-flex">
+        <div class="col-12 col-lg-4 d-flex" data-easy-reveal="fade-in-left">
           <div
             class="card highlights__card highlights__card--review highlights__card--review--3 border-success bg-primary flex-fill">
             <div class="card-body">
@@ -1558,7 +1561,7 @@
                     </div>
                   </div>
                 </div>
-              
+
                 <div class="row">
                   <div class="col-md-12 mb-4">
                     <div class="form-group">
@@ -1579,7 +1582,7 @@
         </div>
 
         <div class="col-lg-4 d-flex order-1 order-lg-2 mb-5 mb-lg-0">
-          <div class="card w-100 bg-success contact__image">
+          <div class="card w-100 bg-success contact__image" data-easy-reveal="fade-in-left">
             <div class="card-body p-0">
               &nbsp
               <!--  <img class="w-100" src="img/Images/Phone-light-pink-hi-dpi.jpg" alt="Pink old phone"> -->
@@ -1598,7 +1601,7 @@
   <section class="footer bg-primary">
     <div class="container">
       <div class="row mb-4">
-        <div class="col-12 text-center d-flex justify-content-center">
+        <div class="col-12 text-center d-flex justify-content-center" data-easy-reveal="fade-in-top">
           <div class="footer__callOut d-flex align-items-center justify-content-center">
             <div class="footer__callOut--content">
               <h1>Say Hi<span class="pink-accent">....</span></h1>
@@ -1665,7 +1668,11 @@
     integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g=="
     crossorigin="anonymous"></script>
 
+  <!--Lightbox js -->
   <script src="/js/lightbox.js"></script>
+
+  <!--Scroll Revea js -->
+  <script src="/js/jquery.easy-reveal.js"></script>
 
   <!--Slick Slider JS https://kenwheeler.github.io/slick/ -->
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
