@@ -8,7 +8,7 @@
   var $targets = $('[data-easy-reveal]');
 
   var windowHeight = $(window).height(),
-    offsetHeight = windowHeight * offset / 50,
+    offsetHeight = windowHeight * offset / 30,
     docHeight = $(document).height();
 
   function reveal() {
