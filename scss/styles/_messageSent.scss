@@ -26,6 +26,12 @@
     overflow: hidden;
     padding: 0;
     margin: 0;
+    background-color: $medPurple;
+    background-image: url("/img/Images/celebration_banner.svg");
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     &--banner-image {
 
@@ -44,6 +50,7 @@
         */
         min-width: 100%;
         min-height: 100%;
+        z-index: 1;
     }
 
     &--icon {

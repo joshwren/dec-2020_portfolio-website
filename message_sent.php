@@ -112,28 +112,9 @@ $headers = 'From: '.$email_from."\r\n".
 <html>
 <!-- CONTENT START HERE -->
 <section class="message-sent bg-primary">
-    <div class="row message-sent__large-hero bg-secondary">
+    <div class="row message-sent__large-hero">
       <div class="message-sent__large-hero" style="padding-left: 0px;  padding-right: 0px;">
         <img src="img/Icons/message-sent.svg" class="message-sent__large-hero--icon">
-
-        <picture>
-          <source srcset="
-          img/Images/celebration_banner.svg 1920w, 
-          img/images/celebration_banner.svg 3840w" media="(min-width: 1380px)"> <!-- Large screen sizes -->
-          <source srcset="
-          img/images/celebration_banner.svg 1380w, 
-          img/images/celebration_banner.svg 2760w" media="(min-width: 990px)"> <!-- Medium screen sizes -->
-          <source srcset="
-          img/images/celebration_banner.svg 990w, 
-          img/images/celebration_banner.svg 1980w" media="(min-width: 640px)"> <!-- Small screen sizes -->
-          <img srcset="
-          img/images/celebration_banner.svg 640w, 
-          img/images/celebration_banner.svg 1280w" alt="" class="message-sent__large-hero--banner-image">
-          <!-- Smallest screen sizes -->
-        </picture>
-        <a href="index.html">
-          <div class="message-sent__close">X</div>
-        </a>
       </div>
     </div>
     <!-- TEXT START -->
