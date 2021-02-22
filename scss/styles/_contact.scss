@@ -56,19 +56,19 @@
   }
 
   &__image {
-    background-image: url(/img/Images/Phone-light-pink-hi-dpi.jpg);
+    background-image: url(/img/Images/Phone-light-pink.jpg);
     background-position: center center;
     background-size: cover;
     height: 250px;
     border-radius: 10px;
 
     @include respond-to("md") {
-      background-image: url(/img/Images/Phone-light-pink-hi-dpi.jpg);
+      background-image: url(/img/Images/Phone-light-pink.jpg);
       height: 250px;
     }
 
     @include respond-to("lg") {
-      background-image: url(/img/Images/Phone-light-pink-hi-dpi.jpg);
+      background-image: url(/img/Images/Phone-light-pink.jpg);
       height: auto;
     }
   }
