@@ -637,19 +637,8 @@ section {
     #gallery img:hover {
       border-radius: 10px 90px 10px 10px; }
 
-.modal-dialog {
-  max-width: 90%; }
-  @media (min-width: 768px) {
-    .modal-dialog {
-      max-width: 80%; } }
-  @media (min-width: 992px) {
-    .modal-dialog {
-      max-width: 70%; } }
-  @media (min-width: 1200px) {
-    .modal-dialog {
-      max-width: 40%; } }
-
 .customModal .modal-content {
+  width: 190% !important;
   background: none;
   border: none; }
 .customModal .modal-header {
@@ -766,25 +755,9 @@ section {
   .portfolio .card {
     border-width: 0 !important;
     box-shadow: none !important; }
-    .portfolio .card p {
-      display: inline; }
-    .portfolio .card__link-icon {
-      display: inline-block;
-      float: right;
-      border-radius: 0px !important;
-      cursor: pointer; }
-      .portfolio .card__link-icon img {
-        display: block;
-        height: 27px;
-        width: auto;
-        border-radius: 0px !important;
-        cursor: pointer; }
   .portfolio a :hover {
     color: #ff9599;
     transform: scale(1.05); }
-  .portfolio__image {
-    margin-top: 20px;
-    margin-bottom: 5px; }
   .portfolio__header--buttons {
     position: relative;
     height: 75px;

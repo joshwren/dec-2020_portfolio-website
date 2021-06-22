@@ -8,10 +8,30 @@
   h3 {
     margin-bottom: 5px;
   }
+  
 
   .card {
     border-width:0 !important;
     box-shadow:none !important;
+
+    p {
+      display: inline;
+    }
+
+    &__link-icon {
+      display: inline-block;
+      float: right;
+      border-radius: 0px !important;
+      cursor: pointer;
+    
+      img {
+        display: block;
+        height: 27px;
+        width: auto;
+        border-radius: 0px !important;
+        cursor: pointer;
+      }    
+    }
   }
 
   a {
@@ -21,6 +41,12 @@
       transform: scale(1.05);
     }
   }
+
+  &__image {
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+
 
   &__header {
 
@@ -54,4 +80,6 @@
     }
   }
 }
+
+
 
