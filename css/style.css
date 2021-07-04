@@ -545,6 +545,35 @@ section {
   content: '- Show Less';
 }
 */
+.expertise {
+  padding: 70px 0; }
+  .expertise__card-body {
+    padding: 0 !important;
+    border-radius: 5px !important;
+    overflow: hidden; }
+  .expertise__card {
+    position: relative;
+    margin: 13px 0;
+    background-color: transparent;
+    border: transparent; }
+    .expertise__card__image {
+      padding: 65px 30px 25px 30px; }
+      .expertise__card__image--icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 75px;
+        width: 75px;
+        border-radius: 100%;
+        border: 2px solid #fff;
+        text-align: center; }
+        .expertise__card__image--icon img {
+          transform: scale(1.7); }
+    .expertise__card__text {
+      padding: 15px 30px !important; }
+      .expertise__card__text p {
+        line-height: normal; }
+
 .skills {
   padding: 70px 0; }
   .skills__cardHeading {

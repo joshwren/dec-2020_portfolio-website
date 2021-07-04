@@ -1,0 +1,46 @@
+.expertise {
+    padding: 70px 0;
+
+    &__card-body {
+        padding: 0 !important;
+        border-radius: 5px !important;
+        overflow: hidden;
+    }
+
+    &__card {
+        position: relative;
+        margin: 13px 0;
+        background-color: transparent;
+        border: transparent;
+
+        &__image {
+            padding: 65px 30px 25px 30px;
+
+            &--icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 75px;
+                width: 75px;
+                border-radius: 100%;
+                border: 2px solid #fff;
+                text-align: center;
+
+                img {
+                    transform: scale(1.7);
+                }
+            }
+
+        }
+
+        &__text {
+            padding: 15px 30px !important;
+
+            p {
+                line-height: normal;
+            }
+        }
+
+
+    }
+}
