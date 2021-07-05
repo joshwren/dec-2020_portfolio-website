@@ -1,4 +1,4 @@
-.skills {
+.experience {
   padding: 70px 0;
 
   &__cardHeading {
@@ -8,26 +8,34 @@
       text-align: left;
     }
   }
-  
+
   &__card {
     position: relative;
     margin: 13px 0;
     padding: 9px 15px;
 
     h1 {
-      font-size: 1.5rem;
-      line-height: 1.75rem;
-      margin-bottom: 5px;
+      font-size: 1.2rem;
+      line-height: 1.2rem;
+      margin-bottom: 7px;
     }
 
     h2 {
-      font-size: 1.15rem;
-      line-height: 1.5rem;
+      font-size: 1.5rem;
+      line-height: 2rem;
       color: $brandPink;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      font-size: 1rem;
+      line-height: 1rem;
+      margin-bottom: 6px;
+      color: #fff;
     }
 
     p {
-      margin-top: 5px;
+      margin-bottom: 0px;
     }
 
     &--icon {
@@ -70,12 +78,17 @@
         &::before {
           position: relative;
           top: 4px;
-          content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+          content: "\2022";
+          /* Add content: \2022 is the CSS Code/unicode for a bullet */
           font-size: 1.5rem;
-          color: $brandPink; /* Change the color */
-          font-weight: 900; /* If you want it to be bold */
-          display: inline-block; /* Needed to add space between the bullet and the text */
-          width: 1.25rem; /* Also needed for space (tweak if needed) */
+          color: $brandPink;
+          /* Change the color */
+          font-weight: 900;
+          /* If you want it to be bold */
+          display: inline-block;
+          /* Needed to add space between the bullet and the text */
+          width: 1.25rem;
+          /* Also needed for space (tweak if needed) */
           margin-left: -5px;
         }
       }
