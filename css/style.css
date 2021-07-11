@@ -572,7 +572,7 @@ section {
     .expertise__card__text {
       padding: 15px 30px !important; }
       .expertise__card__text p {
-        line-height: normal; }
+        font-weight: 400; }
 
 .stats {
   padding: 70px 0; }
@@ -773,17 +773,20 @@ section {
       background: white;
       color: #fc4e55;
       border: solid 2px #fff; }
-.customModal .carousel-control-prev, .customModal .carousel-control-next {
+.customModal .carousel-control-prev,
+.customModal .carousel-control-next {
   font-size: 2em;
   top: auto;
   opacity: 1;
   bottom: -52px; }
   @media (min-width: 768px) {
-    .customModal .carousel-control-prev, .customModal .carousel-control-next {
+    .customModal .carousel-control-prev,
+    .customModal .carousel-control-next {
       top: 0;
       opacity: 0.5;
       bottom: 0; } }
-.customModal .carousel-control-next-icon, .customModal .carousel-control-prev-icon {
+.customModal .carousel-control-next-icon,
+.customModal .carousel-control-prev-icon {
   height: 30px;
   width: 30px; }
 @media (min-width: 768px) {
@@ -816,6 +819,16 @@ section {
     margin-bottom: 10px; }
   .portfolio h3 {
     margin-bottom: 5px; }
+  .portfolio span {
+    display: inline-block;
+    vertical-align: middle; }
+    .portfolio span img {
+      display: block;
+      height: 15px;
+      width: auto;
+      border-radius: 0px !important;
+      cursor: pointer;
+      margin-bottom: 4px; }
   .portfolio .card {
     border-width: 0 !important;
     box-shadow: none !important; }
@@ -836,8 +849,37 @@ section {
     color: #ff9599;
     transform: scale(1.05); }
   .portfolio__image {
-    margin-top: 20px;
-    margin-bottom: 5px; }
+    margin-top: 5px;
+    margin-bottom: 10px; }
+  .portfolio__link-btn {
+    display: inline !important;
+    padding: 1px 8px !important;
+    vertical-align: middle;
+    background-color: #2b2342;
+    border-radius: 13px;
+    border: #fff 1.5px solid;
+    float: right;
+    cursor: pointer;
+    margin: 0 !important; }
+    .portfolio__link-btn p {
+      font-size: .7rem !important;
+      margin: 0 !important;
+      padding: 0 !important; }
+    .portfolio__link-btn i {
+      color: #fff;
+      margin: 0 !important;
+      padding: 0 !important; }
+    .portfolio__link-btn:hover {
+      border: #fc4e55 1.5px solid;
+      color: #fc4e55; }
+      .portfolio__link-btn:hover P {
+        color: #fc4e55;
+        padding: 0 !important;
+        margin: 0 !important; }
+      .portfolio__link-btn:hover i {
+        color: #fc4e55;
+        padding: 0 !important;
+        margin: 0 !important; }
   .portfolio__header--buttons {
     position: relative;
     height: 75px;
