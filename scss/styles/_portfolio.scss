@@ -113,7 +113,7 @@
       height: 75px;
       text-align: center;
 
-      @include respond-to("md") {
+      @include respond-to("lg") {
         height: auto;
       }
 
@@ -125,7 +125,7 @@
         margin-left: auto;
         margin-right: auto;
 
-        @include respond-to("md") {
+        @include respond-to("lg") {
           position: absolute;
           bottom: 0;
           left: auto;
